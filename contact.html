@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Book a Consultation | Srikanth Kalyanasundaram Consulting</title>
+<meta name="description" content="Book a consultation for campus-to-corporate or graduate-trainee training. Reach out by form or email. Delivered across India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <span class="name">Srikanth Kalyanasundaram</span>
+      <span class="tag">Consulting &nbsp;·&nbsp; Campus to Corporate</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="program.html">The Programme</a>
+      <a href="for-colleges.html">For Colleges</a>
+      <a href="for-corporates.html">For Corporates</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary nav-cta">Book a Consultation</a>
+    <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="program.html">The Programme</a>
+    <a href="for-colleges.html">For Colleges</a>
+    <a href="for-corporates.html">For Corporates</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumb">Let's Talk</div>
+    <h1>Book a consultation.</h1>
+    <p class="lead">Tell us a little about your institution or team, and we will get back to you to arrange a short call, and, where it fits, a pilot.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap contact-split">
+    <!-- FORM -->
+    <div>
+      <span class="eyebrow">Send an enquiry</span>
+      <h2 style="margin-bottom:24px">Start the conversation</h2>
+      <!-- To wire this form to a live service like Formspree in production:
+           1. Sign up at Formspree.io
+           2. Change the form tag below to: <form class="form-grid" action="https://formspree.io/f/YOUR_ENDPOINT_ID" method="POST">
+           3. Remove the id="lead-form" attribute so main.js does not intercept the submit event -->
+      <form class="form-grid" id="lead-form">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="org">Institution / Company</label>
+          <input id="org" name="org" type="text" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="phone">Contact Number</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="role">I am enquiring as a</label>
+          <select id="role" name="role">
+            <option>College / University (placement)</option>
+            <option>Corporate (L&amp;D / HR)</option>
+            <option>Individual (1:1 coaching)</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="msg">What are you hoping to achieve?</label>
+          <textarea id="msg" name="msg" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send enquiry</button>
+        <p id="form-note" style="display:none;font-size:.9rem;color:var(--brass-deep)"></p>
+      </form>
+    </div>
+
+    <!-- INFO -->
+    <div class="contact-info">
+      <span class="eyebrow">Other ways to reach us</span>
+      <div class="row"><span class="k">Email</span><!-- Recommended to use a dedicated domain email, e.g., info@domain.com, once ready --><a href="mailto:EMAIL_TO_CONFIRM@domain">EMAIL_TO_CONFIRM@domain</a></div>
+      <div class="row"><span class="k">LinkedIn</span><a href="https://www.linkedin.com/in/experienceislife" target="_blank" rel="noopener">Srikanth Kalyanasundaram →</a></div>
+      <div class="row"><span class="k">Calendar</span><a href="#" target="_blank" rel="noopener">Book a time directly →</a></div>
+      <div class="row"><span class="k">Delivery</span><span>On-campus and on-site across India</span></div>
+
+      <div class="card" style="margin-top:8px">
+        <div class="idx">For placement teams</div>
+        <h3 style="margin:10px 0">Request the college brochure</h3>
+        <p style="color:var(--muted);font-size:.95rem">A one-page overview of Mindful Professional 360° to share with your committee. Ask for it in your enquiry and we will send it across.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <span class="name">Srikanth Kalyanasundaram Consulting</span>
+      <p>Campus-to-corporate transformation and mindfulness consulting. Turning students into confident, employable, emotionally resilient professionals, across India and beyond.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <a href="program.html">The Programme</a>
+      <a href="for-colleges.html">For Colleges</a>
+      <a href="for-corporates.html">For Corporates</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+    </div>
+    <div>
+      <h4>Get in touch</h4>
+      <a href="contact.html">Book a Consultation</a>
+      <!-- Contact email placeholder -->
+      <!-- Recommended to use a dedicated domain email, e.g., info@domain.com, once ready -->
+      <a href="mailto:EMAIL_TO_CONFIRM@domain">EMAIL_TO_CONFIRM@domain</a>
+      <a href="https://www.linkedin.com/in/experienceislife" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© <span id="yr"></span> Srikanth Kalyanasundaram Consulting. All rights reserved.</span>
+    <span>Mindful Professional 360°™</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
