@@ -249,6 +249,12 @@ section{padding:76px 0}
 
 /* ---------- Page hero (interior) ---------- */
 .page-hero{background:var(--ink);color:var(--ivory);padding:72px 0 60px}
+.page-hero.hero-program {
+  background: linear-gradient(rgba(20, 32, 46, 0.88), rgba(20, 32, 46, 0.88)), url('../assets/ai/hero_program.jpg') no-repeat center/cover;
+}
+.page-hero.hero-portfolio {
+  background: linear-gradient(rgba(20, 32, 46, 0.88), rgba(20, 32, 46, 0.88)), url('../assets/ai/hero_portfolio.jpg') no-repeat center/cover;
+}
 .page-hero h1{color:var(--white);max-width:760px}
 .page-hero .lead{color:var(--muted-dark);margin-top:18px;max-width:640px}
 .page-hero .crumb{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brass);margin-bottom:16px}

@@ -30,7 +30,7 @@
       e.preventDefault();
       var note = document.querySelector('#form-note');
       if(note){
-        note.textContent = "Thank you. This is a demo form. Connect it to your email or a service like Formspree to receive enquiries. For now, please reach out on WhatsApp or email.";
+        note.textContent = "Thank you. This is a demo form. Connect it to your email or a service like Formspree to receive enquiries. For now, please reach out via email.";
         note.style.display = 'block';
       }
       form.reset();
