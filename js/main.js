@@ -10,6 +10,28 @@
     });
   }
 
+  // Nav dropdown: click to open, Escape and outside-click to close
+  var groups = document.querySelectorAll('.nav-group');
+  Array.prototype.forEach.call(groups, function(g){
+    var trigger = g.querySelector('button');
+    if(!trigger) return;
+    function setOpen(open){
+      g.setAttribute('data-open', open ? 'true' : 'false');
+      trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    setOpen(false);
+    trigger.addEventListener('click', function(e){
+      e.stopPropagation();
+      setOpen(g.getAttribute('data-open') !== 'true');
+    });
+    g.addEventListener('keydown', function(e){
+      if(e.key === 'Escape'){ setOpen(false); trigger.focus(); }
+    });
+    document.addEventListener('click', function(e){
+      if(!g.contains(e.target)) setOpen(false);
+    });
+  });
+
   // Scroll reveal
   var reveals = document.querySelectorAll('.reveal');
   var isAutomated = (typeof navigator !== 'undefined' && (navigator.webdriver || navigator.userAgent.indexOf('Headless') > -1 || navigator.userAgent.indexOf('Speed Insights') > -1)) || (typeof window !== 'undefined' && window.location && window.location.search && window.location.search.indexOf('reveal=all') > -1);

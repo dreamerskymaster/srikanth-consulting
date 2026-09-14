@@ -10,10 +10,28 @@ A six-page marketing website for Srikanth Kalyanasundaram's consulting practice.
 - `program.html`, the Mindful Professional 360° curriculum
 - `for-colleges.html`, conversion page for placement officers and deans
 - `for-corporates.html`, conversion page for L&D and HR teams
+- `posh.html`, POSH awareness and Internal Committee training for institutions
+- `advisory.html`, one to one coaching and retained HR advisory
+- `insights.html`, selected excerpts from his own LinkedIn writing
 - `about.html`, founder profile
+- `portfolio.html`, career history, frameworks, engagements, awards, session gallery
 - `contact.html`, enquiry form plus contact methods
+- `onepager.html`, print-first A4 leave-behind, source for the committed PDF
 - `css/style.css`, the single shared stylesheet, all design tokens live at the top as CSS variables
-- `js/main.js`, mobile menu, scroll reveal, and a demo form handler
+- `js/main.js`, mobile menu, nav dropdown, scroll reveal, and a demo form handler
+
+## Shared header and footer
+Both are duplicated verbatim in every page (no templating, by design). If you change one you
+must change all of them. The five offer pages sit behind a "What we do" dropdown so the top
+level stays at six items; the nav was already crowded at seven and adding pages flat would
+break it again. The dropdown needs `.nav-group` markup plus the handler in `js/main.js`, and
+the active page is marked with `class="active"` in both the desktop panel and the mobile list.
+
+## The calendar link
+Every page closes with a "Book a 15 minute intro call" button currently pointing at
+`contact.html`. Once a scheduling link exists (Cal.com and Calendly both have a free tier),
+swap the `href` in the `.cta-band` of each page and in the two hero buttons on `posh.html`
+and `advisory.html`. Keep the header CTA pointing at `contact.html`.
 
 ## Hard rules (do not break these)
 1. **No fabricated claims.** Do not add statistics, placement percentages, counts of people trained, a PhD or "Dr." title, or "India's first" style claims unless the family confirms they are real and documented. As of the last update, none of those were verified, so they are absent by design.

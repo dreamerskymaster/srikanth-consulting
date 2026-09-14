@@ -36,13 +36,21 @@
   <div class="wrap nav">
     <a class="brand" href="index.html">
       <span class="name">Srikanth Kalyanasundaram</span>
-      <span class="tag">Consulting &nbsp;·&nbsp; Campus to Corporate</span>
+      <span class="tag">Consulting &nbsp;&middot;&nbsp; Campus to Corporate</span>
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html" class="active">Home</a>
-      <a href="program.html">The Programme</a>
-      <a href="for-colleges.html">For Colleges</a>
-      <a href="for-corporates.html">For Corporates</a>
+      <div class="nav-group">
+        <button type="button" aria-expanded="false" aria-haspopup="true">What we do</button>
+        <div class="nav-panel">
+          <a href="program.html">The Programme<small>Mindful Professional 360&deg;, twelve weeks</small></a>
+          <a href="for-colleges.html">For Colleges<small>Placement readiness cohorts</small></a>
+          <a href="for-corporates.html">For Corporates<small>Graduate trainee bootcamps</small></a>
+          <a href="posh.html">POSH for Institutions<small>Awareness, IC training, annual cycle</small></a>
+          <a href="advisory.html">Advisory &amp; Coaching<small>One to one coaching and retained advisory</small></a>
+        </div>
+      </div>
+      <a href="insights.html">Insights</a>
       <a href="about.html">About</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="contact.html">Contact</a>
@@ -52,9 +60,13 @@
   </div>
   <div class="mobile-menu">
     <a href="index.html" class="active">Home</a>
-    <a href="program.html">The Programme</a>
-    <a href="for-colleges.html">For Colleges</a>
-    <a href="for-corporates.html">For Corporates</a>
+    <div class="mm-label">What we do</div>
+    <a href="program.html" class="mm-sub">The Programme</a>
+    <a href="for-colleges.html" class="mm-sub">For Colleges</a>
+    <a href="for-corporates.html" class="mm-sub">For Corporates</a>
+    <a href="posh.html" class="mm-sub">POSH for Institutions</a>
+    <a href="advisory.html" class="mm-sub">Advisory &amp; Coaching</a>
+    <a href="insights.html">Insights</a>
     <a href="about.html">About</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="contact.html">Contact</a>
@@ -82,14 +94,14 @@
   <div class="wrap">
     <div class="hero-inner">
       <span class="eyebrow on-dark">Campus-to-Corporate Transformation</span>
-      <h1>Turning campus talent into confident, corporate-ready professionals.</h1>
-      <p class="lead">A 12-week experiential programme that builds the communication, professionalism, and emotional resilience employers actually hire for, led by Srikanth Kalyanasundaram, an award-winning HR leader with over two decades in HR leadership.</p>
+      <h1>He made the campus-to-corporate jump himself. Now he prepares your students for theirs.</h1>
+      <p class="lead">Srikanth Kalyanasundaram began as a mechanical engineer commissioning air compressors in the field, then moved into HR and spent over two decades on the hiring side of the table. A 12-week experiential programme turns that experience into the communication, professionalism, and composure employers actually screen for.</p>
       <div class="btn-row">
         <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
         <a href="program.html" class="btn btn-ghost on-dark">See the Programme</a>
       </div>
       <div class="hero-sub">
-        <span>Over two decades in HR leadership</span>
+        <span>Shop floor to HR leadership</span>
         <span>Human-led, experiential delivery</span>
         <span>Delivered across India</span>
       </div>
@@ -102,6 +114,21 @@
   <div class="wrap proof-inner">
     <strong>Only ~50% of Indian graduates are assessed as employable.</strong>
     <span class="src">India Skills Report 2025 (Wheebox) · Mercer|Mettl 2025</span>
+  </div>
+</div>
+
+<!-- ============ DELIVERED AT ============ -->
+<div class="delivered">
+  <div class="wrap">
+    <div class="lbl">Recently delivered at</div>
+    <ul>
+      <li>SRM Institute of Science and Technology</li>
+      <li>Pune Business School</li>
+      <li>ATLAS SkillTech University</li>
+      <li>Sahyadri, Mangalore</li>
+      <li>St. Francis Institute of Management and Research</li>
+      <li>MIT Academy of Engineering</li>
+    </ul>
   </div>
 </div>
 
@@ -280,13 +307,13 @@
       <span class="eyebrow">The person behind the programme</span>
       <h2>Meet Srikanth</h2>
       <p class="lead" style="margin:18px 0">Srikanth began his career as a mechanical engineer on the shop floor before transitioning to lead HR operations as Deputy General Manager at John Cockerill. With over two decades in HR leadership across manufacturing and engineering, he designs training programs using a recruiter's eye and a coach's perspective.</p>
-      <div class="chips">
-        <span class="chip">Iconic HR Leadership Award</span>
-        <span class="chip">Top HR Innovator</span>
-        <span class="chip">Intl. Achievers Award, Best Leadership Mentor</span>
-        <span class="chip">Mindfulness &amp; Happiness Coaching</span>
-        <span class="chip">Train-the-Trainer</span>
-      </div>
+      <ul class="creds">
+        <li>Knows what recruiters screen for, from two decades on the hiring side of the table</li>
+        <li>Lived the campus-to-corporate transition himself, from the shop floor into HR leadership</li>
+        <li>Designs for practice, feedback and pressure, not lectures</li>
+        <li>Delivers the sessions personally, with no associate handover</li>
+      </ul>
+      <p style="margin-top:18px;font-size:.9rem;color:var(--muted)">Awards, certifications and the full engagement history are on the <a href="portfolio.html" style="color:var(--brass-deep);font-weight:500">portfolio</a>.</p>
       <div class="btn-row" style="margin-top:26px">
         <a href="about.html" class="btn btn-primary">About Srikanth</a>
         <a href="portfolio.html" class="btn btn-ghost">View Portfolio</a>
@@ -313,7 +340,7 @@
     <h2>Bring the programme to your campus or team.</h2>
     <p class="lead">Start with a short conversation. We will map your placement or onboarding goals and design a pilot that proves the value before any long-term commitment.</p>
     <div class="btn-row">
-      <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+      <a href="contact.html" class="btn btn-primary">Book a 15 minute intro call</a>
       <a href="for-colleges.html" class="btn btn-ghost on-dark">Request a brochure</a>
     </div>
   </div>
@@ -326,12 +353,19 @@
       <p>Campus-to-corporate transformation and mindfulness consulting. Turning students into confident, employable, emotionally resilient professionals, across India and beyond.</p>
     </div>
     <div>
-      <h4>Explore</h4>
+      <h4>What we do</h4>
       <a href="program.html">The Programme</a>
       <a href="for-colleges.html">For Colleges</a>
       <a href="for-corporates.html">For Corporates</a>
+      <a href="posh.html">POSH for Institutions</a>
+      <a href="advisory.html">Advisory &amp; Coaching</a>
+    </div>
+    <div>
+      <h4>More</h4>
+      <a href="insights.html">Insights</a>
       <a href="about.html">About</a>
       <a href="portfolio.html">Portfolio</a>
+      <a href="onepager.html">One-page overview</a>
     </div>
     <div>
       <h4>Get in touch</h4>
@@ -343,8 +377,8 @@
     </div>
   </div>
   <div class="wrap foot-bottom">
-    <span>© <span id="yr"></span> Srikanth Kalyanasundaram Consulting. All rights reserved.</span>
-    <span>Mindful Professional 360°™</span>
+    <span>&copy; <span id="yr"></span> Srikanth Kalyanasundaram Consulting. All rights reserved.</span>
+    <span>Mindful Professional 360&deg;&trade;</span>
   </div>
 </footer>
 
