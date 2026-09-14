@@ -28,7 +28,9 @@ A six-page marketing website for Srikanth Kalyanasundaram's consulting practice.
 - Layout helpers: `.wrap` (max width), `.section-dark`, `.section-paper`, `.split`, `.grid-3`, `.card`, `.aud`, `.steps`. Reuse these rather than inventing new patterns.
 
 ## Placeholders to replace before launch
-See `README.md` in this folder for the full checklist. In short: the WhatsApp number `910000000000`, the email `hello@example.com`, the LinkedIn URL, a calendar link, wiring the contact form to a service like Formspree, and swapping the grey photo boxes for real images.
+See `README.md` in this folder for the full checklist. Still outstanding: the email `EMAIL_TO_CONFIRM@domain` (17 occurrences across all seven pages), wiring the contact form to a service like Formspree, and the four testimonial placeholders. Already done: real photographs (see `assets/photos/README.md`), the LinkedIn URL, and removal of the WhatsApp number.
 
 ## Current status
-Draft, complete, and previewed. Not yet deployed. Waiting on real photos, real contact details, and (ideally) the first pilot testimonial before going live. Per the wider strategy, the website is not the current priority; validating demand and checking the employment contract come first.
+Deployed for review at https://dreamerskymaster.github.io/srikanth-consulting/. Real photographs are in as of September 2026. Waiting on a real contact email, a working form backend, and (ideally) the first pilot testimonial before it is promoted as a live business site. Per the wider strategy, the website is not the current priority; validating demand and checking the employment contract come first.
+
+One standing caution: the copy names the current employer seven times (once on the home page, six on the portfolio). Given the Code of Conduct question, treat that as a live review item rather than settled.

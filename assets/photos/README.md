@@ -1,33 +1,44 @@
-# Photo Asset Guidelines for Srikanth Kalyanasundaram Consulting
+# Photo assets
 
-To finalize the website and replace the placeholder blocks with real images, please drop your high-resolution photos into this folder (`website/assets/photos/`). Keep the filenames exactly as specified below so they display correctly on the site.
+Real photographs from Srikanth's campus sessions and institutional engagements.
+Generated from the original camera and phone files, resized, re-encoded, and stripped
+of camera metadata. Every image ships as WebP plus a JPEG fallback, wired up in the
+HTML with `<picture>`, `srcset`, and `sizes`.
 
-## Required Photos
+## What is here
 
-### 1. Professional Portrait
-*   **Filename**: `srikanth-portrait.webp` (or `.jpg`)
-*   **Recommended Dimensions**: 800px x 1000px (4:5 Aspect Ratio)
-*   **Usage**: Appears on the Homepage ("Meet Srikanth" section), About page, and Portfolio page.
-*   **Style**: A warm, approachable professional headshot or portrait with clean lighting and a neutral background.
+| Base name | Ratio | Widths | Used on |
+|---|---|---|---|
+| `srikanth-portrait` | 4:5 | 800, 1600 | Home ("Meet Srikanth"), About, Portfolio |
+| `campus-session` | 3:2 | 1200, 1800 | Home ("Why it works"), For Colleges |
+| `corporate-session` | 3:2 | 1200, 1800 | For Corporates |
+| `og-card` | 1200x630 | 1200 | Social share preview on all pages |
+| `session-speaking` | 3:2 | 800, 1200 | Portfolio gallery |
+| `session-felicitation` | 3:2 | 800, 1200 | Portfolio gallery |
+| `session-sahyadri` | 3:2 | 800, 1200 | Portfolio gallery |
+| `session-cohort-group` | 3:2 | 800, 1200 | Portfolio gallery |
+| `session-srm-cohort` | 3:2 | 800, 1200 | Portfolio gallery |
+| `session-sfimar` | 3:2 | 800, 1200 | Portfolio gallery |
 
-### 2. Campus Live Session Photo
-*   **Filename**: `campus-session.webp` (or `.jpg`)
-*   **Recommended Dimensions**: 1200px x 800px (3:2 Aspect Ratio)
-*   **Usage**: Appears on the Homepage ("Why it works" section) and For Colleges page.
-*   **Style**: A live action photo showing you presenting to a classroom or engaging with students during a campus talk (e.g., at SRM or Pune Business School).
+## Editing rules
 
-### 3. Corporate Training or Roundtable Photo
-*   **Filename**: `corporate-session.webp` (or `.jpg`)
-*   **Recommended Dimensions**: 1200px x 800px (3:2 Aspect Ratio)
-*   **Usage**: Appears on the For Corporates page.
-*   **Style**: A photo of you facilitating a corporate training session, panel discussion, or roundtable (e.g., POSH, ESG, or a John Cockerill onboarding session).
+1. **Check for text in the frame before publishing anything new.** Two source photos
+   had to be re-cropped: one had Srikanth's personal mobile number written on a
+   whiteboard, another had his current employer's name on the event screen. The site
+   rule is no phone number anywhere, and naming the current employer on a consulting
+   site is a live contract risk. Zoom in and read every whiteboard, banner, and slide.
+2. Keep the base widths (800 and 1200) under roughly 200KB. The 2x retina variants
+   are allowed to be larger since only high-density screens fetch them.
+3. Alt text describes what is actually in the photo. No claims that the image does not
+   support.
+4. To regenerate, re-run the crop and encode step against the originals rather than
+   re-compressing these files.
 
-### 4. Testimonial Headshots (Optional)
-*   **Filenames**: `testimonial-college.webp` and `testimonial-corporate.webp`
-*   **Recommended Dimensions**: 150px x 150px (1:1 Square Ratio)
-*   **Usage**: Appears next to placement officer or corporate training testimonials on their respective pages.
-*   **Style**: Small, clear headshots of the individuals providing testimonials.
+## Still worth adding
 
-## Image Formats and Optimization
-*   **Format**: WebP is highly recommended for faster page loads, but standard JPG or PNG files are also supported (if using JPG or PNG, make sure to update the file extensions in the HTML source code).
-*   **Size**: Ensure files are optimized and compressed (ideally under 200KB each) to keep the website loading quickly.
+- A proper studio headshot. The current portrait is a crop from a live session and works,
+  but a clean 4:5 headshot would be stronger.
+- A genuine corporate session photo. Everything here is from campus and institutional
+  events, so `corporate-session` is currently an accurately described campus photo.
+- Testimonial headshots (`testimonial-college`, `testimonial-corporate`, 1:1, 150px)
+  once the first written testimonials exist.

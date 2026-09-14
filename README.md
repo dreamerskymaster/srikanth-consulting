@@ -47,6 +47,6 @@ To publish and host this review site on GitHub Pages:
 Before moving the site from staging/review to production, please verify the following:
 1. **Email Address**: Replace `EMAIL_TO_CONFIRM@domain` with your professional business email across all files.
 2. **Formspree Wiring**: Sign up at [formspree.io](https://formspree.io), create a form, and update the form action on `contact.html` to your endpoint.
-3. **Photos**: Replace the portrait placeholder on Home, About, and Portfolio pages with a real photo named `srikanth-portrait.webp` in `assets/photos/`. See the instructions in `assets/photos/README.md` for full dimensions and other session photo guidelines.
+3. ~~**Photos**~~: Done, September 2026. Real photographs are in `assets/photos/`, served as WebP with JPEG fallbacks. See `assets/photos/README.md` for what is there, which pages use each image, and the rule about checking for text in the frame before publishing anything new. Still worth adding later: a studio headshot, a genuine corporate session photo, and testimonial headshots.
 4. **Testimonials**: Swap the placeholder text boxes on the Home, College, and Corporate pages with real testimonials once you run your first pilot cohorts.
 5. **No Fabricated Claims**: Ensure that all statistics and awards remain grounded, factual, and verified.

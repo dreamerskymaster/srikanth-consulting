@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dreamerskymaster.github.io/srikanth-consulting/sitemap.xml
