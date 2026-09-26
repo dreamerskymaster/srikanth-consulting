@@ -10,6 +10,8 @@ HTML with `<picture>`, `srcset`, and `sizes`.
 | Base name | Ratio | Widths | Used on |
 |---|---|---|---|
 | `srikanth-portrait` | 4:5 | 800, 1600 | Home ("Meet Srikanth"), About, Portfolio |
+| `srikanth-hero` | 4:5 | 480, 710 | Home hero portrait |
+| `spotlight-cover` | cover | 360, 720 | Home hero "As featured in" (Leadership Spotlight cover, cropped above the job title and employer line) |
 | `campus-session` | 3:2 | 1200, 1800 | Home ("Why it works"), For Colleges |
 | `corporate-session` | 3:2 | 1200, 1800 | For Corporates |
 | `og-card` | 1200x630 | 1200 | Social share preview on all pages |
