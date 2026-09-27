@@ -46,7 +46,7 @@ and `advisory.html`. Keep the header CTA pointing at `contact.html`.
 - Layout helpers: `.wrap` (max width), `.section-dark`, `.section-paper`, `.split`, `.grid-3`, `.card`, `.aud`, `.steps`. Reuse these rather than inventing new patterns.
 
 ## Placeholders to replace before launch
-See `README.md` in this folder for the full checklist. Still outstanding: the email `EMAIL_TO_CONFIRM@domain` (17 occurrences across all seven pages), wiring the contact form to a service like Formspree, and the four testimonial placeholders. Already done: real photographs (see `assets/photos/README.md`), the LinkedIn URL, and removal of the WhatsApp number.
+See `README.md` in this folder for the full checklist. Still outstanding: the email `EMAIL_TO_CONFIRM@domain` (17 occurrences across all seven pages), wiring the contact form to a service like Formspree, and the testimonial placeholders on the college and corporate pages (keep those for real pilot quotes). Already done: real photographs (see `assets/photos/README.md`), the LinkedIn URL (now `/in/campus2corporate`; the old `/in/experienceislife` 404s), removal of the WhatsApp number, and the home page testimonials (verbatim quotes from his public LinkedIn recommendations, labelled as such).
 
 ## Current status
 Deployed for review at https://dreamerskymaster.github.io/srikanth-consulting/. Real photographs are in as of September 2026. Waiting on a real contact email, a working form backend, and (ideally) the first pilot testimonial before it is promoted as a live business site. Per the wider strategy, the website is not the current priority; validating demand and checking the employment contract come first.
