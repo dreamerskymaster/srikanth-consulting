@@ -1,0 +1,22 @@
+# Srikanth Kalyanasundaram Consulting
+
+> Srikanth Kalyanasundaram, M.IOD, is a Mumbai-based HR leader who began his career as a mechanical engineer on the shop floor and moved into HR, where he has spent over two decades. He runs campus-to-corporate and placement readiness training for colleges, graduate trainee bootcamps for corporates, POSH training for educational institutions, and one to one leadership coaching, delivered across India. He was profiled in "Leadership Spotlight: The Engineer Who Learned to Read People" by The 365 Circle: C-Suite Advantage.
+
+Key facts:
+- Based in Mumbai, Maharashtra, India. Languages: English, Tamil, Hindi, Malayalam, Marathi.
+- Education: Diploma in Mechanical Engineering, Coimbatore Institute of Technology; Post Graduate Diploma in HR Management, Welingkar.
+- Signature programme: Mindful Professional 360°, a 12-week experiential campus-to-corporate programme across six pillars.
+- Certifications: ESG (Institute of Directors), POSH (ISTD), Happiness Coaching (Berkeley Institute of Well Being), Mindfulness Coaching (Happiitude), Train the Trainer (NSDC and MEPSC), Business Storytelling (NIST).
+- LinkedIn: https://www.linkedin.com/in/campus2corporate
+
+## Pages
+- [Home](https://dreamerskymaster.github.io/srikanth-consulting/): overview and signature programme
+- [About](https://dreamerskymaster.github.io/srikanth-consulting/about.html): founder profile, certifications and awards
+- [The Programme](https://dreamerskymaster.github.io/srikanth-consulting/program.html): Mindful Professional 360° curriculum
+- [For Colleges](https://dreamerskymaster.github.io/srikanth-consulting/for-colleges.html): placement readiness cohorts
+- [For Corporates](https://dreamerskymaster.github.io/srikanth-consulting/for-corporates.html): graduate trainee bootcamps
+- [POSH for Institutions](https://dreamerskymaster.github.io/srikanth-consulting/posh.html): awareness and Internal Committee training
+- [Advisory and Coaching](https://dreamerskymaster.github.io/srikanth-consulting/advisory.html): one to one coaching and retained HR advisory
+- [Insights](https://dreamerskymaster.github.io/srikanth-consulting/insights.html): selected writing on leadership and people skills
+- [Portfolio](https://dreamerskymaster.github.io/srikanth-consulting/portfolio.html): career history, frameworks, engagements
+- [Contact](https://dreamerskymaster.github.io/srikanth-consulting/contact.html): book a consultation
