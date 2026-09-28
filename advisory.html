@@ -10,23 +10,30 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="theme-color" content="#14202e">
-<link rel="canonical" href="https://dreamerskymaster.github.io/srikanth-consulting/advisory.html">
+<link rel="canonical" href="https://srikanthk.pages.dev/advisory">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Srikanth Kalyanasundaram Consulting">
-<meta property="og:url" content="https://dreamerskymaster.github.io/srikanth-consulting/advisory.html">
+<meta property="og:url" content="https://srikanthk.pages.dev/advisory">
 <meta property="og:title" content="Leadership Coaching and HR Advisory, Mumbai | Srikanth Kalyanasundaram">
 <meta property="og:description" content="One to one mindful leadership coaching for professionals and senior leaders, plus retained HR advisory covering operations, talent, performance and HR digitalisation. Led by Srikanth Kalyanasundaram.">
-<meta property="og:image" content="https://dreamerskymaster.github.io/srikanth-consulting/assets/photos/og-card-1200.jpg">
+<meta property="og:image" content="https://srikanthk.pages.dev/assets/photos/og-card-1200.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Srikanth Kalyanasundaram speaking at a business school induction ceremony">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Leadership Coaching and HR Advisory, Mumbai | Srikanth Kalyanasundaram">
 <meta name="twitter:description" content="One to one mindful leadership coaching for professionals and senior leaders, plus retained HR advisory covering operations, talent, performance and HR digitalisation. Led by Srikanth Kalyanasundaram.">
-<meta name="twitter:image" content="https://dreamerskymaster.github.io/srikanth-consulting/assets/photos/og-card-1200.jpg">
+<meta name="twitter:image" content="https://srikanthk.pages.dev/assets/photos/og-card-1200.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script>
+/* apply saved display settings before first paint, so there is no flash of the wrong theme */
+(function(){try{var d=document.documentElement,s=JSON.parse(localStorage.getItem('sk-display')||'{}');
+if(s.theme==='light'||s.theme==='dark')d.setAttribute('data-theme',s.theme);
+if(s.text==='large'||s.text==='larger')d.setAttribute('data-text',s.text);
+if(s.motion==='reduce')d.setAttribute('data-motion','reduce');}catch(e){}})();
+</script>
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {
@@ -37,12 +44,12 @@
    "name": "Leadership coaching and HR advisory",
    "description": "One to one leadership coaching and retained HR advisory.",
    "serviceType": "Leadership coaching",
-   "url": "https://dreamerskymaster.github.io/srikanth-consulting/advisory.html",
+   "url": "https://srikanthk.pages.dev/advisory",
    "provider": {
     "@type": "Person",
-    "@id": "https://dreamerskymaster.github.io/srikanth-consulting/#person",
+    "@id": "https://srikanthk.pages.dev/#person",
     "name": "Srikanth Kalyanasundaram",
-    "url": "https://dreamerskymaster.github.io/srikanth-consulting/about.html"
+    "url": "https://srikanthk.pages.dev/about"
    },
    "areaServed": {
     "@type": "Country",
@@ -54,6 +61,8 @@
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
+
 
 <!-- NOTE FOR MAINTAINERS
      This page offers paid advisory and coaching. Per the wider strategy notes, the
@@ -88,9 +97,35 @@
       <a href="contact.html">Contact</a>
     </nav>
     <a href="contact.html" class="btn btn-primary nav-cta">Book a Consultation</a>
-    <button class="menu-btn" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="a11y">
+      <button type="button" class="a11y-btn" aria-expanded="false" aria-controls="a11y-panel" aria-label="Display settings: theme, text size, motion">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor"/></svg>
+      </button>
+      <div class="a11y-panel" id="a11y-panel" role="dialog" aria-label="Display settings" hidden>
+        <h2>Display settings</h2>
+        <fieldset>
+          <legend>Theme</legend>
+          <div class="seg">
+            <label><input type="radio" name="sk-theme" value="auto" checked>Auto</label>
+            <label><input type="radio" name="sk-theme" value="light">Light</label>
+            <label><input type="radio" name="sk-theme" value="dark">Dark</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Text size</legend>
+          <div class="seg">
+            <label><input type="radio" name="sk-text" value="normal" checked>A</label>
+            <label><input type="radio" name="sk-text" value="large"><span style="font-size:1.12em">A</span></label>
+            <label><input type="radio" name="sk-text" value="larger"><span style="font-size:1.25em">A</span></label>
+          </div>
+        </fieldset>
+        <label class="a11y-check"><input type="checkbox" name="sk-motion"> Reduce motion</label>
+        <button type="button" class="a11y-reset">Reset to defaults</button>
+      </div>
+    </div>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
   </div>
-  <div class="mobile-menu">
+  <div class="mobile-menu" id="mobile-menu">
     <a href="index.html">Home</a>
     <div class="mm-label">What we do</div>
     <a href="program.html" class="mm-sub">The Programme</a>
@@ -105,6 +140,8 @@
     <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
   </div>
 </header>
+
+<main id="main" tabindex="-1">
 
 <section class="page-hero">
   <div class="wrap">
@@ -219,6 +256,8 @@
   </div>
 </section>
 
+</main>
+
 <footer class="site-footer">
   <div class="wrap foot-grid">
     <div class="foot-brand">
@@ -250,8 +289,9 @@
     </div>
   </div>
   <div class="wrap foot-bottom">
-    <span>&copy; <span id="yr"></span> Srikanth Kalyanasundaram Consulting. All rights reserved.</span>
+    <span>&copy; <span id="yr"></span> Srikanth Kalyanasundaram Consulting, Mumbai, India. All rights reserved.</span>
     <span>Mindful Professional 360&deg;&trade;</span>
+    <span class="foot-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Grievances</a></span>
   </div>
 </footer>
 <script src="js/main.js"></script>

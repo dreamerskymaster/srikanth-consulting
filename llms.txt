@@ -10,13 +10,15 @@ Key facts:
 - LinkedIn: https://www.linkedin.com/in/campus2corporate
 
 ## Pages
-- [Home](https://dreamerskymaster.github.io/srikanth-consulting/): overview and signature programme
-- [About](https://dreamerskymaster.github.io/srikanth-consulting/about.html): founder profile, certifications and awards
-- [The Programme](https://dreamerskymaster.github.io/srikanth-consulting/program.html): Mindful Professional 360° curriculum
-- [For Colleges](https://dreamerskymaster.github.io/srikanth-consulting/for-colleges.html): placement readiness cohorts
-- [For Corporates](https://dreamerskymaster.github.io/srikanth-consulting/for-corporates.html): graduate trainee bootcamps
-- [POSH for Institutions](https://dreamerskymaster.github.io/srikanth-consulting/posh.html): awareness and Internal Committee training
-- [Advisory and Coaching](https://dreamerskymaster.github.io/srikanth-consulting/advisory.html): one to one coaching and retained HR advisory
-- [Insights](https://dreamerskymaster.github.io/srikanth-consulting/insights.html): selected writing on leadership and people skills
-- [Portfolio](https://dreamerskymaster.github.io/srikanth-consulting/portfolio.html): career history, frameworks, engagements
-- [Contact](https://dreamerskymaster.github.io/srikanth-consulting/contact.html): book a consultation
+- [Home](https://srikanthk.pages.dev/): overview and signature programme
+- [About](https://srikanthk.pages.dev/about): founder profile, certifications and awards
+- [The Programme](https://srikanthk.pages.dev/program): Mindful Professional 360° curriculum
+- [For Colleges](https://srikanthk.pages.dev/for-colleges): placement readiness cohorts
+- [For Corporates](https://srikanthk.pages.dev/for-corporates): graduate trainee bootcamps
+- [POSH for Institutions](https://srikanthk.pages.dev/posh): awareness and Internal Committee training
+- [Advisory and Coaching](https://srikanthk.pages.dev/advisory): one to one coaching and retained HR advisory
+- [Insights](https://srikanthk.pages.dev/insights): selected writing on leadership and people skills
+- [Portfolio](https://srikanthk.pages.dev/portfolio): career history, frameworks, engagements
+- [Contact](https://srikanthk.pages.dev/contact): book a consultation
+- [Privacy notice](https://srikanthk.pages.dev/privacy): DPDP Act 2023 notice
+- [Terms of use](https://srikanthk.pages.dev/terms): website terms
