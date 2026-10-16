@@ -1,52 +1,58 @@
-# Srikanth Kalyanasundaram Consulting - Website
+# Srikanth Kalyanasundaram Consulting, website
 
-A complete, mobile-first, seven-page marketing website. Built using pure HTML, CSS, and JavaScript with no build steps or external package dependencies. The site is optimized for performance, accessibility, and credibility.
+Marketing site for Srikanth Kalyanasundaram's campus-to-corporate, POSH, coaching and HR advisory practice.
+Plain HTML, CSS and JavaScript: no framework, no build step, no dependencies.
 
-## Page Map
-*   `index.html`: Homepage (introducing the practice and Srikanth)
-*   `about.html`: Founder credibility (the main personal bio asset)
-*   `portfolio.html`: Detailed personal portfolio (career transition, timeline, and credentials)
-*   `program.html`: Mindful Professional 360° flagship curriculum
-*   `for-colleges.html`: College placement readiness partnership page
-*   `for-corporates.html`: Corporate L&D graduate-trainee bootcamps
-*   `contact.html`: Enquiry form and contact details
+**Live:** https://srikanthk.pages.dev (Cloudflare Pages project `srikanthk`)
 
-## Running Locally
-Since this is a static site, you can run it in two ways:
-1. **Directly**: Double-click `index.html` to open it in your browser.
-2. **Local Web Server**: For proper path handling, run a simple local HTTP server from the website root folder. For example, using Python:
-   ```bash
-   python3 -m http.server 8000
-   ```
-   Then open `http://localhost:8000` in your web browser.
+## Pages
+| File | Purpose |
+|---|---|
+| `index.html` | Home: hero from the Leadership Spotlight feature, programme, LinkedIn recommendations |
+| `program.html` | Mindful Professional 360°, the twelve-week curriculum |
+| `for-colleges.html` | Placement readiness for colleges |
+| `for-corporates.html` | Graduate trainee bootcamps |
+| `posh.html` | POSH awareness and Internal Committee training for institutions |
+| `advisory.html` | One to one coaching and retained HR advisory |
+| `insights.html` | Excerpts from his LinkedIn writing |
+| `about.html` | Founder profile |
+| `portfolio.html` | Career history, frameworks, engagements, awards, gallery |
+| `contact.html` | Enquiry form (with consent checkbox) and contact details |
+| `onepager.html` | Printable A4 leave-behind; source of `srikanth-kalyanasundaram-onepager.pdf` |
+| `privacy.html`, `terms.html` | DPDP Act 2023 privacy notice and terms of use |
+| `404.html` | Not-found page (root-relative links, `noindex`) |
 
-## Deployment to GitHub Pages
-To publish and host this review site on GitHub Pages:
-1. Ensure Git is initialized inside the `website/` directory only:
-   ```bash
-   cd website
-   git init
-   git add -A
-   git commit -m "Initial website deployment"
-   ```
-2. Create a new public repository on GitHub named `srikanth-consulting`.
-3. Add the remote and push your code:
-   ```bash
-   git remote add origin https://github.com/<your-username>/srikanth-consulting.git
-   git branch -M main
-   git push -u origin main
-   ```
-4. On GitHub, navigate to **Settings** > **Pages** inside your repository:
-   *   Under **Build and deployment** > **Source**, select **Deploy from a branch**.
-   *   Under **Branch**, select `main` and `/ (root)` folder, then click **Save**.
-5. Once built (usually 1-2 minutes), the site will be live at `https://<your-username>.github.io/srikanth-consulting/`.
+Shared: `css/style.css` (all design tokens at the top), `js/main.js` (menu, dropdown, display
+settings, scroll reveal, demo form handler), `_headers` (Cloudflare security headers),
+`sitemap.xml`, `robots.txt`, `llms.txt`, `assets/photos` (see its README), `assets/ai`.
 
-*Note: The `.nojekyll` file at the root ensures that folders starting with underscores or containing static assets serve correctly.*
+## Features
+- **Light and dark mode.** Follows the device; the header's display settings button lets a visitor pick
+  Auto, Light or Dark, a text size (three steps) and reduced motion. Saved in that browser only.
+- **Accessibility.** Skip link, `main` landmark, visible focus, WCAG AA contrast checked in both themes.
+- **SEO.** Name-first titles, JSON-LD (Person, ProfessionalService, Service, ProfilePage), image sitemap,
+  `llms.txt`. Canonical URLs point at srikanthk.pages.dev.
+- **India compliance.** Privacy notice (DPDP Act 2023), terms with grievance contact and Mumbai jurisdiction,
+  consent on the enquiry form, testimonials quoted verbatim with dates.
 
-## Launch Checklist & placeholders
-Before moving the site from staging/review to production, please verify the following:
-1. **Email Address**: currently `srikanthsund@gmail.com` on every page. Swap it for a domain email when one exists.
-2. **Formspree Wiring**: Sign up at [formspree.io](https://formspree.io), create a form, and update the form action on `contact.html` to your endpoint.
-3. ~~**Photos**~~: Done, September 2026. Real photographs are in `assets/photos/`, served as WebP with JPEG fallbacks. See `assets/photos/README.md` for what is there, which pages use each image, and the rule about checking for text in the frame before publishing anything new. Still worth adding later: a studio headshot, a genuine corporate session photo, and testimonial headshots.
-4. **Testimonials**: Swap the placeholder text boxes on the Home, College, and Corporate pages with real testimonials once you run your first pilot cohorts.
-5. **No Fabricated Claims**: Ensure that all statistics and awards remain grounded, factual, and verified.
+## Run locally
+```bash
+python3 -m http.server 8000
+```
+Open http://localhost:8000.
+
+## Deploy
+The Cloudflare project is not connected to Git, so pushing to `main` does **not** publish.
+Deploy from a clean copy that leaves out the Markdown notes (they must not go public):
+```bash
+rsync -a --delete --exclude .git --exclude '*.md' --exclude .gitignore --exclude .nojekyll \
+  --exclude .DS_Store --exclude .wrangler ./ /tmp/sk-dist/
+npx wrangler pages deploy /tmp/sk-dist --project-name srikanthk --branch main
+```
+Requires `npx wrangler login` on the account that owns the project.
+
+To regenerate the one-page PDF after editing `onepager.html`, print it with headless Chrome
+(`--print-to-pdf`, light theme, A4) and check it is still one page.
+
+## Pending
+See "Pending" in `CLAUDE.md` for the current list.
