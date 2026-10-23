@@ -74,13 +74,17 @@ Keep the repo to a single `main` branch: branch, merge the PR, delete the branch
 - Layout helpers: `.wrap`, `.section-dark`, `.section-paper`, `.split`, `.grid-3`, `.card`, `.aud`,
   `.steps`, `.prose` (legal pages). Reuse these rather than inventing new patterns.
 
-## Current status (15 October 2026)
+## Current status (23 October 2026)
 Live at https://srikanthk.pages.dev with light and dark mode, display settings, SEO structured data,
 the DPDP privacy notice and terms, and the contact email `mtmdselflove@gmail.com` (his chosen website and business address, 23 Oct 2026) on every page and
 in the one-page PDF. The air compressor commissioning line has been removed everywhere. The repo
 has one branch, `main`, and the live site matches it.
 
 ## Pending
+0. **Owner requests of 23 October 2026, local-only work.** A rebrand requested by the owner is
+   prepared on a local branch that is deliberately not pushed (this repo is public and the new name
+   must clear a trademark check first). An AI readiness assistant he asked about is undecided.
+   Details are with Ajith, not in this file.
 1. **Contact form backend.** The form is still a demo (shows a note, sends nothing). Connect a free
    Formspree form: set the `action` on `contact.html` and remove `id="lead-form"` so `main.js` stops
    intercepting it. The privacy notice already allows for a form service.
