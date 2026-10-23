@@ -76,7 +76,7 @@ Keep the repo to a single `main` branch: branch, merge the PR, delete the branch
 
 ## Current status (15 October 2026)
 Live at https://srikanthk.pages.dev with light and dark mode, display settings, SEO structured data,
-the DPDP privacy notice and terms, and the contact email `srikanthsund@gmail.com` on every page and
+the DPDP privacy notice and terms, and the contact email `mtmdselflove@gmail.com` (his chosen website and business address, 23 Oct 2026) on every page and
 in the one-page PDF. The air compressor commissioning line has been removed everywhere. The repo
 has one branch, `main`, and the live site matches it.
 
