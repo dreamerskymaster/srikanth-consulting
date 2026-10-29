@@ -14,15 +14,17 @@ no build step, no dependencies. Live at **https://srikanthk.pages.dev**.
 - `for-corporates.html`, conversion page for L&D and HR teams
 - `posh.html`, POSH awareness and Internal Committee training for institutions
 - `advisory.html`, one to one coaching and retained HR advisory
+- `benefits.html`, employee benefits advisory for employers (advice only; states that no insurance is sold or arranged)
 - `insights.html`, selected excerpts from his own LinkedIn writing
 - `about.html`, founder profile
 - `portfolio.html`, career history, frameworks, engagements, awards, session gallery
-- `contact.html`, enquiry form (required consent checkbox) plus contact methods
+- `contact.html`, enquiry form (required consent checkbox) plus contact methods; posts to FormSubmit
+- `thanks.html`, where FormSubmit returns visitors after an enquiry (`noindex`)
 - `onepager.html`, print-first A4 leave-behind, source for `srikanth-kalyanasundaram-onepager.pdf`
 - `privacy.html`, DPDP Act 2023 privacy notice; `terms.html`, terms of use and grievances
 - `404.html`, not-found page; uses root-relative links because it is served at any path
 - `css/style.css`, the single stylesheet; brand tokens and theme role tokens at the top
-- `js/main.js`, mobile menu, nav dropdown, display settings, scroll reveal, demo form handler
+- `js/main.js`, mobile menu, nav dropdown, display settings, scroll reveal, form double-submit guard
 - `_headers`, Cloudflare Pages security headers; `sitemap.xml`, `robots.txt`, `llms.txt` for search and AI
 
 ## Shared header and footer
@@ -67,6 +69,13 @@ Keep the repo to a single `main` branch: branch, merge the PR, delete the branch
    recommendations (linkedin.com/in/campus2corporate). Do not edit their wording.
 6. **Do not publish the Markdown notes.** They mention his employment Code of Conduct question.
 
+## Contact form
+The form posts directly (no JavaScript interception) to `https://formsubmit.co/mtmdselflove@gmail.com`,
+a free service with no account, and FormSubmit redirects to `/thanks`. The first submission from the
+live site sends an "Activate Form" email to that inbox; someone must click it once before enquiries are
+delivered. `_honey` is a spam honeypot; `_template=table` formats the email. The privacy notice names
+FormSubmit and Gmail as the services that handle enquiries.
+
 ## Design system
 - Colours: `--ink` navy `#14202e`, `--ivory` `#f7f4ec`, `--brass` accent `#b5893f`, plus greys.
 - Type: Fraunces for headings, Inter for body, from Google Fonts.
@@ -74,34 +83,26 @@ Keep the repo to a single `main` branch: branch, merge the PR, delete the branch
 - Layout helpers: `.wrap`, `.section-dark`, `.section-paper`, `.split`, `.grid-3`, `.card`, `.aud`,
   `.steps`, `.prose` (legal pages). Reuse these rather than inventing new patterns.
 
-## Current status (23 October 2026)
+## Current status (29 October 2026)
 Live at https://srikanthk.pages.dev with light and dark mode, display settings, SEO structured data,
-the DPDP privacy notice and terms, and the contact email `mtmdselflove@gmail.com` (his chosen website and business address, 23 Oct 2026) on every page and
-in the one-page PDF. The air compressor commissioning line has been removed everywhere. The repo
-has one branch, `main`, and the live site matches it.
+the DPDP privacy notice and terms, and the contact email `mtmdselflove@gmail.com`. This branch adds the
+owner's four practices (Campus, Respect, Inspire, Benefits) on the home page, his new founder bio on the
+About page, the Employee Benefits page, a working contact form, and a compliance pass (no placeholder
+testimonials, sourced statistics, advice-only wording for benefits). Planned launch: 6 November 2026.
 
 ## Pending
-0. **Owner requests of 23 October 2026, local-only work.** A rebrand requested by the owner is
-   prepared on a local branch that is deliberately not pushed (this repo is public and the new name
-   must clear a trademark check first). An AI readiness assistant he asked about is undecided.
-   Details are with Ajith, not in this file.
-1. **Contact form backend.** The form is still a demo (shows a note, sends nothing). Connect a free
-   Formspree form: set the `action` on `contact.html` and remove `id="lead-form"` so `main.js` stops
-   intercepting it. The privacy notice already allows for a form service.
-2. **Employment contract and legal review.** His Code of Conduct may bar consulting while employed;
-   a lawyer should review it, and the privacy notice and terms, before the site is promoted as a business.
-3. **Current employer named seven times** (once on home, six on portfolio). A live review item
-   given point 2.
-4. **GitHub Pages copy still live** at dreamerskymaster.github.io/srikanth-consulting, and the repo is
-   public, so this file can be read by anyone. Turn off Pages (Settings, Pages) and consider making
-   the repo private.
+1. **Activate the contact form** on launch day: submit one test enquiry on the live site, then click
+   "Activate Form" in the mtmdselflove@gmail.com inbox, then send a second test.
+2. **Employment contract.** The owner should confirm his employment terms allow this work before the
+   site is promoted as a business.
+3. **Current employer named seven times** (once on home, six on portfolio). Review with point 2.
+4. **The repo is public**, so this file and its history can be read by anyone, and a GitHub Pages copy
+   is live at dreamerskymaster.github.io/srikanth-consulting. Turn off Pages and make the repo private.
 5. **Google Search Console.** Add srikanthk.pages.dev, verify, submit `sitemap.xml`. Needs the owner's
    Google login.
-6. **Testimonial placeholders** on `for-colleges.html` and `for-corporates.html`: keep until real pilot
-   quotes exist.
+6. **Testimonials** for the college and corporate pages: add real, named, dated quotes after the first
+   pilots (the placeholders were removed).
 7. **Calendar link.** The "Book a 15 minute intro call" buttons point at `contact.html`; swap the `href`
-   in each page's `.cta-band` (and the hero buttons on `posh.html` and `advisory.html`) once a free
-   Cal.com or Calendly link exists.
-8. **Optional:** a domain in his name (paid, about ₹500 to ₹1,000 a year) and a domain email to replace
-   the Gmail address; Git-connect the Cloudflare project for automatic deploys (would need a build
-   step that excludes `*.md`).
+   once a free Cal.com or Calendly link exists.
+8. **Optional:** a domain and a domain email; Git-connect the Cloudflare project for automatic deploys
+   (would need a build step that excludes `*.md`).
