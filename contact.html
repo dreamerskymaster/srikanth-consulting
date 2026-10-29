@@ -127,11 +127,13 @@ if(s.motion==='reduce')d.setAttribute('data-motion','reduce');}catch(e){}})();
     <div>
       <span class="eyebrow">Send an enquiry</span>
       <h2 style="margin-bottom:24px">Start the conversation</h2>
-      <!-- To wire this form to a live service like Formspree in production:
-           1. Sign up at Formspree.io
-           2. Change the form tag below to: <form class="form-grid" action="https://formspree.io/f/YOUR_ENDPOINT_ID" method="POST">
-           3. Remove the id="lead-form" attribute so main.js does not intercept the submit event -->
-      <form class="form-grid" id="lead-form">
+      <!-- Enquiries are delivered by FormSubmit (formsubmit.co, free, no account) to the business inbox.
+           The first submission from the live site sends an "Activate Form" email to that inbox; click it once. -->
+      <form class="form-grid" id="lead-form" action="https://formsubmit.co/mtmdselflove@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New website enquiry">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://srikanthk.pages.dev/thanks">
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
         <div class="field">
           <label for="name">Your name</label>
           <input id="name" name="name" type="text" required autocomplete="name">
@@ -153,6 +155,7 @@ if(s.motion==='reduce')d.setAttribute('data-motion','reduce');}catch(e){}})();
           <select id="role" name="role">
             <option>College / University (placement)</option>
             <option>Corporate (L&amp;D / HR)</option>
+            <option>Employer (employee benefits)</option>
             <option>Individual (1:1 coaching)</option>
             <option>Other</option>
           </select>
@@ -163,7 +166,6 @@ if(s.motion==='reduce')d.setAttribute('data-motion','reduce');}catch(e){}})();
         </div>
         <label class="consent"><input type="checkbox" name="consent" required><span>I agree that Srikanth Kalyanasundaram may use these details to reply to my enquiry, as described in the <a href="privacy.html">privacy notice</a>.</span></label>
         <button type="submit" class="btn btn-primary">Send enquiry</button>
-        <p id="form-note" role="status" aria-live="polite" style="display:none;font-size:.9rem;color:var(--brass-deep)"></p>
       </form>
     </div>
 
