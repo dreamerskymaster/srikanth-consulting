@@ -67,7 +67,7 @@ Keep the repo to a single `main` branch: branch, merge the PR, delete the branch
 4. **Keep it honest about AI.** "Human-led, AI-augmented," never "AI cannot do this."
 5. **Testimonials are verbatim and dated.** Home page quotes come from his public LinkedIn
    recommendations (linkedin.com/in/campus2corporate). Do not edit their wording.
-6. **Do not publish the Markdown notes.** They mention his employment Code of Conduct question.
+6. **Do not publish the Markdown notes.** They are for maintainers only; the deploy step excludes `*.md`.
 
 ## Contact form
 The form posts directly (no JavaScript interception) to `https://formsubmit.co/mtmdselflove@gmail.com`,
