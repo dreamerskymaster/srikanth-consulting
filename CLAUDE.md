@@ -69,6 +69,19 @@ Keep the repo to a single `main` branch: branch, merge the PR, delete the branch
    recommendations (linkedin.com/in/campus2corporate). Do not edit their wording.
 6. **Do not publish the Markdown notes.** They are for maintainers only; the deploy step excludes `*.md`.
 
+## SEO and AI search
+- Every indexable page has a title under about 65 characters, a description under 160, matching Open Graph
+  and Twitter tags, a canonical URL, `hreflang` en-IN and x-default, `lang="en-IN"` and `og:locale` en_IN.
+- Structured data (JSON-LD): Person and ProfessionalService (with the four practices as offer catalogues)
+  on the home page, ProfilePage on About, Service on each service page, BreadcrumbList on inner pages,
+  ContactPage, and FAQPage on the home and benefits pages. FAQ JSON-LD must match the visible FAQ text
+  word for word; edit both together.
+- `robots.txt` welcomes search and AI crawlers by name; `/thanks` is excluded and `noindex`.
+- `llms.txt` (summary) and `llms-full.txt` (text of every public page) are for AI assistants. They are
+  generated, so regenerate them after editing page text (script kept outside the repo, with Ajith).
+- The `<32 hex>.txt` file at the root is the IndexNow key; the launch script pings IndexNow after deploys.
+- Not done yet (needs the owner's Google login): Google Search Console verification and sitemap submit.
+
 ## Contact form
 The form posts directly (no JavaScript interception) to `https://formsubmit.co/mtmdselflove@gmail.com`,
 a free service with no account, and FormSubmit redirects to `/thanks`. The first submission from the
