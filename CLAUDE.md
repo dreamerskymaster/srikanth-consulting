@@ -123,7 +123,7 @@ testimonials, sourced statistics, advice-only wording for benefits) and a full S
    Bing Webmaster Tools can then import the site.
 4. **Brand name** once the trade mark application is filed: `tools/launch.sh "<Brand>"`.
 5. **Employment terms.** The owner is confirming his employment terms allow this work, and whether to
-   keep his current employer's name on the site (once on home, six times on portfolio).
+   keep his current employer's name on the site (once on home, three times on portfolio).
 6. **The repo is public**, so this file and its history can be read by anyone. Turn off GitHub Pages
    (Settings, Pages, Unpublish) and consider making the repo private.
 7. **Testimonials** for the college and corporate pages: add real, named, dated quotes after the first
