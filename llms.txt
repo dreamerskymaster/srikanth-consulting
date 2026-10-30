@@ -1,25 +1,35 @@
-# Srikanth Kalyanasundaram Consulting
+# Srikanth Kalyanasundaram
 
-> Srikanth Kalyanasundaram, M.IOD, is a Mumbai-based HR leader who began his career as a mechanical engineer on the shop floor and moved into HR, where he has spent over two decades. He runs campus-to-corporate and placement readiness training for colleges, graduate trainee bootcamps for corporates, POSH training for educational institutions, and one to one leadership coaching, and employee benefits advisory for employers, delivered across India. The work is organised in four practices: Campus (campus-to-corporate readiness), Respect (POSH compliance, workplace dignity, culture), Inspire (leadership development, mentoring, wellbeing) and Benefits (employee benefits advisory, wellbeing, benefits operations and governance; advice only, no insurance is sold). He was profiled in "Leadership Spotlight: The Engineer Who Learned to Read People" by The 365 Circle: C-Suite Advantage.
+> Srikanth Kalyanasundaram, M.IOD, is a Mumbai-based HR leader, entrepreneur and mentor with over two decades building people-centred, high-performance organisations. He started as a mechanical engineer, moved into HR, and now helps students and early-career professionals cross the bridge from campus to corporate. Tagline: "Elevating People, Empowering Futures." He was profiled in "Leadership Spotlight: The Engineer Who Learned to Read People" by The 365 Circle: C-Suite Advantage.
 
-Key facts:
-- Based in Mumbai, Maharashtra, India. Languages: English, Tamil, Hindi, Malayalam, Marathi.
-- Education: Diploma in Mechanical Engineering, Coimbatore Institute of Technology; Post Graduate Diploma in HR Management, Welingkar.
-- Signature programme: Mindful Professional 360°, a 12-week experiential campus-to-corporate programme across six pillars.
-- Certifications: ESG (Institute of Directors), POSH (ISTD), Happiness Coaching (Berkeley Institute of Well Being), Mindfulness Coaching (Happiitude), Train the Trainer (NSDC and MEPSC), Business Storytelling (NIST).
-- LinkedIn: https://www.linkedin.com/in/campus2corporate
+## Four practices
+- Campus: Campus-to-Corporate Readiness. The signature 12-week Mindful Professional 360° programme, placement readiness cohorts for colleges, graduate trainee bootcamps for companies.
+- Respect: Building Respect, Enabling Safe Workplaces. POSH compliance and Internal Committee training for institutions, workplace dignity, culture transformation.
+- Inspire: Unlock Potential, Inspire Growth, Elevate Lives. Leadership development, mentoring and career growth, wellbeing and mindfulness, personal effectiveness coaching, retained HR advisory.
+- Benefits: Employee Benefits Advisory. Independent advice for employers on benefits design, employee wellbeing, and benefits operations and governance. Advice only: no insurance is sold, solicited or arranged.
+
+## Key facts
+- Based in Mumbai, Maharashtra, India; delivers on campus and on site across India.
+- Languages: English, Hindi, Tamil, Malayalam, Marathi.
+- Education: Diploma in Mechanical Engineering, Coimbatore Institute of Technology; Post Graduate Diploma in HR Management, Welingkar Institute, Mumbai.
+- Certifications: ESG (Institute of Directors), POSH (Indian Society for Training and Development), Happiness Coaching (Berkeley Institute of Well Being), Mindfulness Coaching (Happiitude), Train the Trainer (NSDC and MEPSC), Business Storytelling (NIST).
+- Approach: human-led and AI-augmented; experiential practice, feedback and simulation rather than lectures; every college cohort is assessed before and after.
+- Contact: mtmdselflove@gmail.com, or the form at https://srikanthk.pages.dev/contact. LinkedIn: https://www.linkedin.com/in/campus2corporate
 
 ## Pages
-- [Home](https://srikanthk.pages.dev/): overview and signature programme
+- [Home](https://srikanthk.pages.dev/): the four practices, the signature programme, FAQ
 - [About](https://srikanthk.pages.dev/about): founder profile, certifications and awards
-- [The Programme](https://srikanthk.pages.dev/program): Mindful Professional 360° curriculum
-- [For Colleges](https://srikanthk.pages.dev/for-colleges): placement readiness cohorts
+- [The Programme](https://srikanthk.pages.dev/program): Mindful Professional 360°, six pillars over twelve weeks
+- [For Colleges](https://srikanthk.pages.dev/for-colleges): placement readiness training and pilots
 - [For Corporates](https://srikanthk.pages.dev/for-corporates): graduate trainee bootcamps
-- [POSH for Institutions](https://srikanthk.pages.dev/posh): awareness and Internal Committee training
+- [POSH for Institutions](https://srikanthk.pages.dev/posh): awareness sessions and Internal Committee training
 - [Advisory and Coaching](https://srikanthk.pages.dev/advisory): one to one coaching and retained HR advisory
-- [Employee Benefits](https://srikanthk.pages.dev/benefits): benefits advisory, employee wellbeing, benefits operations and governance
+- [Employee Benefits](https://srikanthk.pages.dev/benefits): benefits advisory, wellbeing, governance (advice only)
 - [Insights](https://srikanthk.pages.dev/insights): selected writing on leadership and people skills
-- [Portfolio](https://srikanthk.pages.dev/portfolio): career history, frameworks, engagements
-- [Contact](https://srikanthk.pages.dev/contact): book a consultation
+- [Portfolio](https://srikanthk.pages.dev/portfolio): career history, frameworks, engagements, gallery
+- [Contact](https://srikanthk.pages.dev/contact): book a 15 minute intro call
+
+## Optional
+- [Full site text](https://srikanthk.pages.dev/llms-full.txt): every page above as plain text
 - [Privacy notice](https://srikanthk.pages.dev/privacy): DPDP Act 2023 notice
-- [Terms of use](https://srikanthk.pages.dev/terms): website terms
+- [Terms of use](https://srikanthk.pages.dev/terms)
