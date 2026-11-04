@@ -107,14 +107,16 @@ FormSubmit and Gmail as the services that handle enquiries.
 - Layout helpers: `.wrap`, `.section-dark`, `.section-paper`, `.split`, `.grid-3`, `.card`, `.aud`,
   `.steps`, `.prose` (legal pages). Reuse these rather than inventing new patterns.
 
-## Current status (3 November 2026)
-`main` holds the launch-ready site: the four practices on the home page, his new founder bio, the
-Employee Benefits page, a working contact form (FormSubmit), a compliance pass (no placeholder
-testimonials, sourced statistics, advice-only wording for benefits) and a full SEO and AI-search pass.
-**The live site is still the previous version** until the launch on 6 November 2026, when
-`tools/launch.sh` publishes main (with `"<Brand>"` if the trade mark has been filed by then).
-This work is on the `launch` branch, PR #11. Merge it only after GitHub Pages is turned off, or the
-github.io copy publishes it before launch.
+## Current status (4 November 2026)
+`main` holds the launch-ready site (PR #11, merged 4 Nov): the four practices on the home page, his new
+founder bio, the Employee Benefits page, a working contact form (FormSubmit), a compliance pass (no
+placeholder testimonials, sourced statistics, advice-only wording for benefits) and a full SEO and
+AI-search pass. GitHub Pages is off (the github.io copy returns 404).
+**The live site is still the previous version** until the launch on 6 November 2026 (morning India
+time, evening of 5 November in New York), when `tools/launch.sh` publishes main (with `"<Brand>"` only
+if the trade mark has been filed by then; no application number yet on 4 Nov).
+A separate AI practice chatbot (readiness check) is being built in its own private project; it is not
+linked from this site until the owner approves it.
 
 ## Pending
 1. **Launch on 6 November 2026** with `tools/launch.sh`.
@@ -126,8 +128,8 @@ github.io copy publishes it before launch.
 4. **Brand name** once the trade mark application is filed: `tools/launch.sh "<Brand>"`.
 5. **Employment terms.** The owner is confirming his employment terms allow this work, and whether to
    keep his current employer's name on the site (once on home, three times on portfolio).
-6. **The repo is public**, so this file and its history can be read by anyone. Turn off GitHub Pages
-   (Settings, Pages, Unpublish) and consider making the repo private.
+6. **The repo is public**, so this file and its history can be read by anyone. GitHub Pages is off
+   (4 Nov); consider making the repo private.
 7. **Testimonials** for the college and corporate pages: add real, named, dated quotes after the first
    pilots.
 8. **Calendar link.** The "Book a 15 minute intro call" buttons point at `contact.html`; swap the `href`
