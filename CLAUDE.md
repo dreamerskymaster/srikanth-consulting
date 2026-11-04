@@ -50,9 +50,13 @@ it in every page or the wrong theme flashes. The footer carries Privacy, Terms a
   was darkened to `#7d5c27` for that reason; re-check if you touch colours.
 
 ## Deploy
-Cloudflare Pages project `srikanthk` (account of ajithsri3103@gmail.com). **Not Git-connected:
-pushing to `main` does not publish.** Deploy with the script, which copies the site without the
-Markdown notes, `tools/` and `.wrangler`, deploys it, checks the live pages and pings IndexNow:
+Cloudflare Pages project `srikanthk` (account of ajithsri3103@gmail.com). **It IS Git-connected**
+(since 28 September 2026): every push to `main` publishes the raw repo root to production with no build
+step, which includes this file, `README.md` and `tools/`. So **after every merge to `main`, run
+`tools/launch.sh` straight away**; it publishes a clean copy over the automatic one. (Found on
+4 November 2026, when merging PR #11 put the site and these notes live early.) The script copies the
+site without the Markdown notes, `tools/`, `.claude/` and `.wrangler`, deploys it, checks the live pages
+and pings IndexNow:
 ```bash
 tools/launch.sh              # deploy main as it is
 tools/launch.sh "<Brand>"    # apply a brand through a PR first; only once its trade mark is filed
@@ -112,14 +116,15 @@ FormSubmit and Gmail as the services that handle enquiries.
 founder bio, the Employee Benefits page, a working contact form (FormSubmit), a compliance pass (no
 placeholder testimonials, sourced statistics, advice-only wording for benefits) and a full SEO and
 AI-search pass. GitHub Pages is off (the github.io copy returns 404).
-**The live site is still the previous version** until the launch on 6 November 2026 (morning India
-time, evening of 5 November in New York), when `tools/launch.sh` publishes main (with `"<Brand>"` only
-if the trade mark has been filed by then; no application number yet on 4 Nov).
+**Launched on 4 November 2026**, two days before the planned 6 November, after the merge auto-deployed
+it: a clean copy of `main` (7d1af55) was then deployed over the automatic one and IndexNow was pinged.
+It is under his own name; the brand follows with `tools/launch.sh "<Brand>"` once the trade mark is filed
+(no application number yet on 4 Nov).
 A separate AI practice chatbot (readiness check) is being built in its own private project; it is not
 linked from this site until the owner approves it.
 
 ## Pending
-1. **Launch on 6 November 2026** with `tools/launch.sh`.
+1. ~~Launch~~ done 4 November 2026. After merging this file's PR, run `tools/launch.sh` once more.
 2. **Activate the contact form** right after launch: submit one test enquiry on the live site, click
    "Activate Form" in the mtmdselflove@gmail.com inbox, then send a second test.
 3. **Google Search Console** after launch: URL-prefix property for https://srikanthk.pages.dev/, verify
@@ -134,5 +139,6 @@ linked from this site until the owner approves it.
    pilots.
 8. **Calendar link.** The "Book a 15 minute intro call" buttons point at `contact.html`; swap the `href`
    once a free Cal.com or Calendly link exists.
-9. **Optional:** a domain and a domain email (needs the owner's go-ahead; paid); Git-connect the
-   Cloudflare project for automatic deploys (would need a build step that excludes `*.md` and `tools/`).
+9. **Optional:** a domain and a domain email (needs the owner's go-ahead; paid). The project is already
+   Git-connected (see Deploy); a build step that copies only the site (excluding `*.md`, `tools/`,
+   `.claude/`) would make the automatic deploys safe and `launch.sh` unnecessary after merges.
