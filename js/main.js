@@ -100,14 +100,15 @@
   // Contact form: front-end only demo. Replace action with real endpoint (Formspree / your backend).
   var form = document.querySelector('#lead-form');
   if(form){
-    form.addEventListener('submit', function(e){
-      e.preventDefault();
-      var note = document.querySelector('#form-note');
-      if(note){
-        note.textContent = "Thank you. This is a demo form. Connect it to your email or a service like Formspree to receive enquiries. For now, please reach out via email.";
-        note.style.display = 'block';
-      }
-      form.reset();
+    // The form posts straight to FormSubmit. Only guard against double submits.
+    form.addEventListener('submit', function(){
+      var btn = form.querySelector('button[type="submit"]');
+      if(btn){ btn.disabled = true; btn.textContent = 'Sending...'; }
+    });
+    // Re-enable the button if the visitor comes back with the browser's Back button.
+    window.addEventListener('pageshow', function(){
+      var btn = form.querySelector('button[type="submit"]');
+      if(btn){ btn.disabled = false; btn.textContent = 'Send enquiry'; }
     });
   }
 })();
