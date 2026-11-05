@@ -26,6 +26,8 @@ CSS and JavaScript. No framework, no build step, no dependencies. Live at **http
 - `404.html`, not-found page; uses root-relative links because it is served at any path
 - `css/style.css`, the single stylesheet; brand tokens and theme role tokens at the top
 - `js/main.js`, mobile menu, nav dropdown, display settings, scroll reveal, form double-submit guard
+- `googled2da2ffa5502e466.html` and the `google-site-verification` meta tag in `index.html`: Google Search
+  Console ownership proof; never remove them
 - `_headers`, Cloudflare Pages security and cache headers; `sitemap.xml`, `robots.txt`, `llms.txt`,
   `llms-full.txt` for search and AI; `<32 hex>.txt` is the IndexNow key
 - `tools/` (never deployed): `launch.sh` deploys main, `apply-brand.py` applies a brand name,
@@ -127,9 +129,10 @@ linked from this site until the owner approves it.
 1. ~~Launch~~ done 4 November 2026. After merging this file's PR, run `tools/launch.sh` once more.
 2. **Activate the contact form** right after launch: submit one test enquiry on the live site, click
    "Activate Form" in the mtmdselflove@gmail.com inbox, then send a second test.
-3. **Google Search Console** after launch: URL-prefix property for https://srikanthk.pages.dev/, verify
-   with the HTML tag in `index.html`, submit `sitemap.xml`, add mtmdselflove@gmail.com as an owner.
-   Bing Webmaster Tools can then import the site.
+3. **Google Search Console:** URL-prefix property https://srikanthk.pages.dev/ added 4 Nov under
+   ajithsri3103@gmail.com. Verification: the meta tag in `index.html` and `googled2da2ffa5502e466.html` at
+   the root (keep both, or Google un-verifies). Then submit `sitemap.xml`, add mtmdselflove@gmail.com as an
+   owner, and import into Bing Webmaster Tools.
 4. **Brand name** once the trade mark application is filed: `tools/launch.sh "<Brand>"`.
 5. **Employment terms.** The owner is confirming his employment terms allow this work, and whether to
    keep his current employer's name on the site (once on home, three times on portfolio).

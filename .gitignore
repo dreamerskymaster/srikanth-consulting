@@ -3,3 +3,5 @@
 *.log
 # Wrangler writes this cache wherever it runs; it must never be committed or deployed.
 .wrangler/
+# Local Claude Code worktrees; never commit or deploy them.
+.claude/
