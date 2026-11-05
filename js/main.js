@@ -97,13 +97,59 @@
     reveals.forEach(function(el){ el.classList.add('in'); });
   }
 
-  // Contact form: front-end only demo. Replace action with real endpoint (Formspree / your backend).
+  // Contact form. Without JavaScript it posts straight to FormSubmit (the form's action).
+  // With JavaScript it sends through FormSubmit's AJAX endpoint (no captcha page) and, if
+  // FormSubmit is down or slow, keeps the visitor's text and offers a prefilled email instead,
+  // so an enquiry is never lost to an error page.
   var form = document.querySelector('#lead-form');
   if(form){
-    // The form posts straight to FormSubmit. Only guard against double submits.
-    form.addEventListener('submit', function(){
-      var btn = form.querySelector('button[type="submit"]');
-      if(btn){ btn.disabled = true; btn.textContent = 'Sending...'; }
+    var TO = 'mtmdselflove@gmail.com';
+    var setBtn = function(busy){
+      var b = form.querySelector('button[type="submit"]');
+      if(b){ b.disabled = busy; b.textContent = busy ? 'Sending...' : 'Send enquiry'; }
+    };
+    var fallback = function(){
+      var v = function(n){ var el = form.elements[n]; return el && el.value ? el.value.trim() : ''; };
+      var body = 'Name: ' + v('name') + '\nOrganisation: ' + v('org') + '\nEmail: ' + v('email') +
+        '\nPhone: ' + v('phone') + '\nEnquiring as: ' + v('role') + '\n\n' + v('msg').slice(0, 1500);
+      var href = 'mailto:' + TO + '?subject=' + encodeURIComponent('Website enquiry') + '&body=' + encodeURIComponent(body);
+      var box = document.getElementById('form-fallback');
+      if(!box){
+        box = document.createElement('div');
+        box.id = 'form-fallback';
+        box.className = 'card';
+        box.setAttribute('role', 'alert');
+        box.style.marginTop = '1rem';
+        form.appendChild(box);
+      }
+      box.textContent = '';
+      var p = document.createElement('p');
+      p.textContent = 'Sorry, the form could not be sent just now. Your message is still here. Please send it by email instead; it opens ready to go.';
+      var a = document.createElement('a');
+      a.className = 'btn btn-primary';
+      a.href = href;
+      a.textContent = 'Email your enquiry';
+      a.style.marginTop = '.75rem';
+      box.appendChild(p); box.appendChild(a);
+      setBtn(false);
+    };
+    form.addEventListener('submit', function(e){
+      if(!window.fetch || !window.FormData) { setBtn(true); return; } // old browsers: normal post
+      e.preventDefault();
+      if(form.elements._honey && form.elements._honey.value){ window.location.href = '/thanks'; return; }
+      setBtn(true);
+      var ctrl = window.AbortController ? new AbortController() : null;
+      var timer = setTimeout(function(){ if(ctrl) ctrl.abort(); }, 15000);
+      fetch('https://formsubmit.co/ajax/' + TO, {
+        method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form),
+        signal: ctrl ? ctrl.signal : undefined
+      }).then(function(r){
+        return r.ok ? r.json() : null;
+      }).then(function(d){
+        clearTimeout(timer);
+        if(d && (d.success === true || d.success === 'true')){ window.location.href = '/thanks'; }
+        else { fallback(); }
+      }).catch(function(){ clearTimeout(timer); fallback(); });
     });
     // Re-enable the button if the visitor comes back with the browser's Back button.
     window.addEventListener('pageshow', function(){

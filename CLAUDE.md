@@ -100,7 +100,10 @@ practice names, titles, structured data, FAQ, one-pager) and fails loudly if any
 - Google Search Console is not set up yet (see Pending).
 
 ## Contact form
-The form posts directly (no JavaScript interception) to `https://formsubmit.co/mtmdselflove@gmail.com`,
+With JavaScript, `js/main.js` sends it to FormSubmit's AJAX endpoint (`/ajax/mtmdselflove@gmail.com`, no
+captcha page) with a 15 s timeout; if that fails it keeps the text and shows an "Email your enquiry" button
+(a prefilled mailto). FormSubmit was down with HTTP 522 from 3 to at least 5 November 2026, which is why.
+Without JavaScript the form posts directly to `https://formsubmit.co/mtmdselflove@gmail.com`,
 a free service with no account, and FormSubmit redirects to `/thanks`. The first submission from the
 live site sends an "Activate Form" email to that inbox; someone must click it once before enquiries are
 delivered. `_honey` is a spam honeypot; `_template=table` formats the email. The privacy notice names
