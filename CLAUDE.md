@@ -26,6 +26,8 @@ CSS and JavaScript. No framework, no build step, no dependencies. Live at **http
 - `404.html`, not-found page; uses root-relative links because it is served at any path
 - `css/style.css`, the single stylesheet; brand tokens and theme role tokens at the top
 - `js/main.js`, mobile menu, nav dropdown, display settings, scroll reveal, form double-submit guard
+- `googled2da2ffa5502e466.html` and the `google-site-verification` meta tag in `index.html`: Google Search
+  Console ownership proof; never remove them
 - `_headers`, Cloudflare Pages security and cache headers; `sitemap.xml`, `robots.txt`, `llms.txt`,
   `llms-full.txt` for search and AI; `<32 hex>.txt` is the IndexNow key
 - `tools/` (never deployed): `launch.sh` deploys main, `apply-brand.py` applies a brand name,
@@ -50,9 +52,13 @@ it in every page or the wrong theme flashes. The footer carries Privacy, Terms a
   was darkened to `#7d5c27` for that reason; re-check if you touch colours.
 
 ## Deploy
-Cloudflare Pages project `srikanthk` (account of ajithsri3103@gmail.com). **Not Git-connected:
-pushing to `main` does not publish.** Deploy with the script, which copies the site without the
-Markdown notes, `tools/` and `.wrangler`, deploys it, checks the live pages and pings IndexNow:
+Cloudflare Pages project `srikanthk` (account of ajithsri3103@gmail.com). **It IS Git-connected**
+(since 28 September 2026): every push to `main` publishes the raw repo root to production with no build
+step, which includes this file, `README.md` and `tools/`. So **after every merge to `main`, run
+`tools/launch.sh` straight away**; it publishes a clean copy over the automatic one. (Found on
+4 November 2026, when merging PR #11 put the site and these notes live early.) The script copies the
+site without the Markdown notes, `tools/`, `.claude/` and `.wrangler`, deploys it, checks the live pages
+and pings IndexNow:
 ```bash
 tools/launch.sh              # deploy main as it is
 tools/launch.sh "<Brand>"    # apply a brand through a PR first; only once its trade mark is filed
@@ -94,7 +100,10 @@ practice names, titles, structured data, FAQ, one-pager) and fails loudly if any
 - Google Search Console is not set up yet (see Pending).
 
 ## Contact form
-The form posts directly (no JavaScript interception) to `https://formsubmit.co/mtmdselflove@gmail.com`,
+With JavaScript, `js/main.js` sends it to FormSubmit's AJAX endpoint (`/ajax/mtmdselflove@gmail.com`, no
+captcha page) with a 15 s timeout; if that fails it keeps the text and shows an "Email your enquiry" button
+(a prefilled mailto). FormSubmit was down with HTTP 522 from 3 to at least 5 November 2026, which is why.
+Without JavaScript the form posts directly to `https://formsubmit.co/mtmdselflove@gmail.com`,
 a free service with no account, and FormSubmit redirects to `/thanks`. The first submission from the
 live site sends an "Activate Form" email to that inbox; someone must click it once before enquiries are
 delivered. `_honey` is a spam honeypot; `_template=table` formats the email. The privacy notice names
@@ -107,30 +116,35 @@ FormSubmit and Gmail as the services that handle enquiries.
 - Layout helpers: `.wrap`, `.section-dark`, `.section-paper`, `.split`, `.grid-3`, `.card`, `.aud`,
   `.steps`, `.prose` (legal pages). Reuse these rather than inventing new patterns.
 
-## Current status (3 November 2026)
-`main` holds the launch-ready site: the four practices on the home page, his new founder bio, the
-Employee Benefits page, a working contact form (FormSubmit), a compliance pass (no placeholder
-testimonials, sourced statistics, advice-only wording for benefits) and a full SEO and AI-search pass.
-**The live site is still the previous version** until the launch on 6 November 2026, when
-`tools/launch.sh` publishes main (with `"<Brand>"` if the trade mark has been filed by then).
-This work is on the `launch` branch, PR #11. Merge it only after GitHub Pages is turned off, or the
-github.io copy publishes it before launch.
+## Current status (4 November 2026)
+`main` holds the launch-ready site (PR #11, merged 4 Nov): the four practices on the home page, his new
+founder bio, the Employee Benefits page, a working contact form (FormSubmit), a compliance pass (no
+placeholder testimonials, sourced statistics, advice-only wording for benefits) and a full SEO and
+AI-search pass. GitHub Pages is off (the github.io copy returns 404).
+**Launched on 4 November 2026**, two days before the planned 6 November, after the merge auto-deployed
+it: a clean copy of `main` (7d1af55) was then deployed over the automatic one and IndexNow was pinged.
+It is under his own name; the brand follows with `tools/launch.sh "<Brand>"` once the trade mark is filed
+(no application number yet on 4 Nov).
+A separate AI practice chatbot (readiness check) is being built in its own private project; it is not
+linked from this site until the owner approves it.
 
 ## Pending
-1. **Launch on 6 November 2026** with `tools/launch.sh`.
+1. ~~Launch~~ done 4 November 2026. After merging this file's PR, run `tools/launch.sh` once more.
 2. **Activate the contact form** right after launch: submit one test enquiry on the live site, click
    "Activate Form" in the mtmdselflove@gmail.com inbox, then send a second test.
-3. **Google Search Console** after launch: URL-prefix property for https://srikanthk.pages.dev/, verify
-   with the HTML tag in `index.html`, submit `sitemap.xml`, add mtmdselflove@gmail.com as an owner.
-   Bing Webmaster Tools can then import the site.
+3. **Google Search Console:** URL-prefix property https://srikanthk.pages.dev/ added 4 Nov under
+   ajithsri3103@gmail.com. Verification: the meta tag in `index.html` and `googled2da2ffa5502e466.html` at
+   the root (keep both, or Google un-verifies). Then submit `sitemap.xml`, add mtmdselflove@gmail.com as an
+   owner, and import into Bing Webmaster Tools.
 4. **Brand name** once the trade mark application is filed: `tools/launch.sh "<Brand>"`.
 5. **Employment terms.** The owner is confirming his employment terms allow this work, and whether to
    keep his current employer's name on the site (once on home, three times on portfolio).
-6. **The repo is public**, so this file and its history can be read by anyone. Turn off GitHub Pages
-   (Settings, Pages, Unpublish) and consider making the repo private.
+6. **The repo is public**, so this file and its history can be read by anyone. GitHub Pages is off
+   (4 Nov); consider making the repo private.
 7. **Testimonials** for the college and corporate pages: add real, named, dated quotes after the first
    pilots.
 8. **Calendar link.** The "Book a 15 minute intro call" buttons point at `contact.html`; swap the `href`
    once a free Cal.com or Calendly link exists.
-9. **Optional:** a domain and a domain email (needs the owner's go-ahead; paid); Git-connect the
-   Cloudflare project for automatic deploys (would need a build step that excludes `*.md` and `tools/`).
+9. **Optional:** a domain and a domain email (needs the owner's go-ahead; paid). The project is already
+   Git-connected (see Deploy); a build step that copies only the site (excluding `*.md`, `tools/`,
+   `.claude/`) would make the automatic deploys safe and `launch.sh` unnecessary after merges.

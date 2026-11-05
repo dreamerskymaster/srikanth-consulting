@@ -54,7 +54,7 @@ titles, structured data, FAQ, llms files and the one-pager."
 fi
 
 DIST="$(mktemp -d)/sk-dist"
-rsync -a --delete --exclude .git --exclude '*.md' --exclude .gitignore --exclude .DS_Store \
+rsync -a --delete --exclude .git --exclude .claude --exclude '*.md' --exclude .gitignore --exclude .DS_Store \
   --exclude .wrangler --exclude tools ./ "$DIST/"
 # Run wrangler outside the repo so its .wrangler cache never lands in the site.
 ( cd "$(dirname "$DIST")" && npx wrangler pages deploy "$DIST" --project-name srikanthk --branch main --commit-dirty=true )
