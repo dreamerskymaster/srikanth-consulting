@@ -5,3 +5,5 @@
 .wrangler/
 # Local Claude Code worktrees; never commit or deploy them.
 .claude/
+
+.hyperframes/

@@ -1,5 +1,10 @@
 # Srikanth Kalyanasundaram, website
 
+[![Launch Video](https://img.shields.io/badge/Launch%20Video-MP4-ff0055?style=for-the-badge&logo=youtube&logoColor=white)](brag-output/brag.mp4)
+
+![Demo](docs/demo.gif)
+
+
 Marketing site for Srikanth Kalyanasundaram's people advisory and transformation practice, in four
 practices: Campus (campus-to-corporate readiness), Respect (POSH and workplace dignity), Inspire
 (leadership, mentoring, wellbeing) and Benefits (employee benefits advice for employers).
