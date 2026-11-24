@@ -117,7 +117,7 @@ FormSubmit and Gmail as the services that handle enquiries.
 - Layout helpers: `.wrap`, `.section-dark`, `.section-paper`, `.split`, `.grid-3`, `.card`, `.aud`,
   `.steps`, `.prose` (legal pages). Reuse these rather than inventing new patterns.
 
-## Current status (23 November 2026)
+## Current status (24 November 2026)
 **Live since 4 November 2026** at https://srikanthk.pages.dev, under his own name: the four practices,
 his founder bio, the Employee Benefits page, the contact form with its email fallback (PR #12), a compliance
 pass and a full SEO and AI-search pass. GitHub Pages is off.
@@ -141,6 +141,14 @@ violations on 15 pages). `tools/launch.sh` no longer publishes `brag-output/` an
 the brag video (domain srikanthconsulting.in is unregistered), award issuers and years, certificate issuer names, the
 AICTE 12.5 lakh source, photo consent, the music licence, the AI image tool's terms.
 
+**24 November 2026, the owner's answers (PR #16):** awards now come from his own list, each with its issuer and
+year where he gave one (nine; the old World HR Summit, Chairman's, safety and Laureate Assembly lines were not on his
+list and were dropped); certificate issuers named (Happiitude with the Berkeley Well-Being Institute, California;
+National Institute of Skill Training, New Delhi); his employer's name is no longer used anywhere ("I cannot use
+anywhere my company name"), Aarambh stays. He wants the contact form activated only after the brand is filed (it is
+tied to the email address, so the brand does not need a new activation); 2-Step Verification is on for the business
+Gmail; payment terms are no advance or 50% advance, balance on completion, no automatic refund (the site promises none).
+
 ## Pending
 1. **Activate the contact form:** the owner clicks "Activate Form" in the mtmdselflove@gmail.com inbox,
    then send one more test enquiry and check it arrives.
@@ -149,8 +157,9 @@ AICTE 12.5 lakh source, photo consent, the music licence, the AI image tool's te
 3. **Google Business Profile** (the owner's own step, signed in as mtmdselflove@gmail.com): finish
    Google's verification.
 4. **Brand name** once the trade mark application is filed: `tools/launch.sh "<Brand>"`.
-5. **Employment terms.** The owner is confirming his employment terms allow this work, and whether to
-   keep his current employer's name on the site (once on home, three times on portfolio).
+5. **Employment terms.** Employer name removed 24 November at his word; confirm that reading with him. Still
+   open: AICTE 12.5 lakh source, ISTD POSH certificate and Institute of Directors membership current, LinkedIn
+   recommendations still public, college OK for the session photos (an email from each placement officer).
 6. **The repo is public**, so this file and its history can be read by anyone. GitHub Pages is off
    (4 Nov); consider making the repo private.
 7. **Testimonials** for the college and corporate pages: add real, named, dated quotes after the first
