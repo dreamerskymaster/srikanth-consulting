@@ -12,6 +12,7 @@
   --brass:#b5893f;        /* the single accent (awards, warmth, trust) */
   --brass-deep:#7d5c27;   /* brass for text on paper; darkened to pass 4.5:1 on every light surface */
   --line:#d9d1c0;         /* hairline dividers on light */
+  --field-border:#8a8170; /* form field borders: 3:1 against the field (WCAG 1.4.11) */
   --line-dark:#2e3e52;    /* hairline dividers on dark */
   --muted:#5c6570;        /* secondary text on light */
   --muted-dark:#9fb0c2;   /* secondary text on dark */
@@ -54,6 +55,7 @@ h2{font-size:clamp(1.7rem,3.8vw,2.7rem)}
 h3{font-size:clamp(1.2rem,2vw,1.45rem);line-height:1.25}
 p{color:var(--text)}
 .lead{font-size:clamp(1.05rem,1.6vw,1.28rem);color:var(--muted);line-height:1.65}
+.lead a{text-decoration:underline;text-underline-offset:2px}
 
 .eyebrow{
   font-family:var(--sans);
@@ -222,7 +224,7 @@ section{padding:76px 0}
 .proof .wrap{padding-top:30px;padding-bottom:30px}
 .proof-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px 34px;text-align:center}
 .proof strong{font-family:var(--serif);font-size:1.15rem;font-weight:600}
-.proof .src{font-size:.78rem;opacity:.72}
+.proof .src{font-size:.78rem}
 
 /* ---------- Stat band ---------- */
 .stats{display:grid;grid-template-columns:1fr;gap:2px;background:var(--line)}
@@ -244,6 +246,7 @@ section{padding:76px 0}
 }
 .card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
 .card .idx{font-family:var(--serif);font-size:.95rem;color:var(--brass-deep);font-weight:600}
+.section-dark .card .idx,.section-dark .placeholder-note{color:#d6ac60}
 .card h3{margin:12px 0 8px}
 .card p{color:var(--muted);font-size:.96rem}
 .section-dark .card{background:var(--band-soft);border-color:var(--line-dark)}
@@ -323,8 +326,9 @@ section{padding:76px 0}
 .field label{font-size:.85rem;font-weight:600;color:var(--text)}
 .field input,.field select,.field textarea{
   font-family:var(--sans);font-size:1rem;padding:12px 14px;
-  border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);color:var(--text);
+  border:1px solid var(--field-border);border-radius:var(--radius);background:var(--surface);color:var(--text);
 }
+.form-note{font-size:.85rem;color:var(--muted);margin:0}
 .field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--brass);outline-offset:1px;border-color:var(--brass)}
 .contact-split{display:grid;gap:40px}
 @media(min-width:860px){.contact-split{grid-template-columns:1.1fr .9fr;gap:60px}}
@@ -338,7 +342,7 @@ section{padding:76px 0}
 .foot-grid{display:grid;gap:32px;align-items:start}
 @media(min-width:620px){.foot-grid{grid-template-columns:1fr 1fr;gap:40px}}
 @media(min-width:980px){.foot-grid{grid-template-columns:1.6fr 1fr 1fr 1fr;gap:44px}}
-.site-footer h4{font-family:var(--serif);color:var(--ivory);font-size:1.05rem;margin-bottom:14px;font-weight:500}
+.site-footer h4,.site-footer .foot-h{font-family:var(--serif);color:var(--ivory);font-size:1.05rem;margin-bottom:14px;font-weight:500}
 .site-footer a{color:var(--muted-dark);font-size:.92rem;display:block;padding:5px 0}
 .site-footer a:hover{color:var(--brass)}
 .foot-brand .name{font-family:var(--serif);color:var(--ivory);font-size:1.25rem}
@@ -374,6 +378,7 @@ section{padding:76px 0}
   --band:#0a1118;
   --band-soft:#17222e;
   --line:#2c3a4a;
+  --field-border:#6b7d90;
   --line-dark:#22303f;
   --muted:#a9b4c0;
   --brass-deep:#d6ac60;     /* brass labels read on dark */
@@ -390,6 +395,7 @@ section{padding:76px 0}
   --band:#0a1118;
   --band-soft:#17222e;
   --line:#2c3a4a;
+  --field-border:#6b7d90;
   --line-dark:#22303f;
   --muted:#a9b4c0;
   --brass-deep:#d6ac60;     /* brass labels read on dark */
