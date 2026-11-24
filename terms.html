@@ -73,7 +73,7 @@ if(s.motion==='reduce')d.setAttribute('data-motion','reduce');}catch(e){}})();
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html">Home</a>
       <div class="nav-group">
-        <button type="button" aria-expanded="false" aria-haspopup="true">What we do</button>
+        <button type="button" aria-expanded="false">What we do</button>
         <div class="nav-panel">
           <a href="program.html">The Programme<small>Campus &middot; Mindful Professional 360&deg;</small></a>
           <a href="for-colleges.html">For Colleges<small>Campus &middot; Placement readiness cohorts</small></a>
@@ -106,9 +106,9 @@ if(s.motion==='reduce')d.setAttribute('data-motion','reduce');}catch(e){}})();
         <fieldset>
           <legend>Text size</legend>
           <div class="seg">
-            <label><input type="radio" name="sk-text" value="normal" checked>A</label>
-            <label><input type="radio" name="sk-text" value="large"><span style="font-size:1.12em">A</span></label>
-            <label><input type="radio" name="sk-text" value="larger"><span style="font-size:1.25em">A</span></label>
+            <label><input type="radio" name="sk-text" value="normal" checked aria-label="Normal text size">A</label>
+            <label><input type="radio" name="sk-text" value="large" aria-label="Large text size"><span style="font-size:1.12em">A</span></label>
+            <label><input type="radio" name="sk-text" value="larger" aria-label="Larger text size"><span style="font-size:1.25em">A</span></label>
           </div>
         </fieldset>
         <label class="a11y-check"><input type="checkbox" name="sk-motion"> Reduce motion</label>
@@ -156,8 +156,11 @@ if(s.motion==='reduce')d.setAttribute('data-motion','reduce');}catch(e){}})();
 <h2>Fees and taxes</h2>
 <p>Fees are quoted per engagement in Indian rupees. Where GST applies, it is charged as required by law and shown on the invoice.</p>
 
+<h2 id="cancellation">Cancellation, rescheduling and refunds</h2>
+<p>Nothing is sold or paid for on this website. The written proposal for each engagement sets out its fees, payment dates, and the terms for cancelling or rescheduling, including any refund.</p>
+
 <h2>Content and names</h2>
-<p>The text, programme structures, frameworks and photographs on this site belong to Srikanth Kalyanasundaram unless stated otherwise. You may share links and short quotes with credit; please ask before reusing anything else. Names of institutions and organisations are mentioned only to describe past sessions and do not imply endorsement.</p>
+<p>The text, programme structures and frameworks on this site are Srikanth Kalyanasundaram's work. Photographs are from his own sessions and events; the Leadership Spotlight cover belongs to its publisher; the programme illustrations were made with an AI image tool. You may share links and short quotes with credit; please ask before reusing anything else. Names of institutions and organisations are mentioned only to describe past sessions and do not imply endorsement.</p>
 
 <h2>Testimonials</h2>
 <p>Quotes on this site are reproduced from public recommendations given by the named people, with the date they were written. They describe those people's own experience.</p>
@@ -171,9 +174,9 @@ if(s.motion==='reduce')d.setAttribute('data-motion','reduce');}catch(e){}})();
 <h2>Governing law</h2>
 <p>These terms are governed by the laws of India, and the courts at Mumbai have jurisdiction.</p>
 
-<h2>Grievances</h2>
-<p>For any concern about this website, including its content or your personal data, write through the <a href="contact.html">contact page</a>. We aim to acknowledge within 48 hours and resolve within 30 days.</p>
-<p class="updated">Last updated: 6 November 2026</p>
+<h2 id="grievances">Grievances</h2>
+<p>For any concern about this website, including its content or your personal data, write to the grievance officer: Srikanth Kalyanasundaram, Mumbai, Maharashtra, India, <a href="mailto:mtmdselflove@gmail.com?subject=Grievance">mtmdselflove@gmail.com</a>. We aim to acknowledge within 48 hours and resolve within 30 days. If a concern about your personal data is not resolved, you can complain to the Data Protection Board of India.</p>
+<p class="updated">Last updated: 24 November 2026</p>
   </div>
 </section>
 
@@ -186,7 +189,7 @@ if(s.motion==='reduce')d.setAttribute('data-motion','reduce');}catch(e){}})();
       <p>Elevating People, Empowering Futures. People advisory and transformation across campus readiness, workplace respect, leadership development and employee benefits, across India.</p>
     </div>
     <div>
-      <h4>What we do</h4>
+      <h2 class="foot-h">What we do</h2>
       <a href="program.html">The Programme</a>
       <a href="for-colleges.html">For Colleges</a>
       <a href="for-corporates.html">For Corporates</a>
@@ -195,14 +198,14 @@ if(s.motion==='reduce')d.setAttribute('data-motion','reduce');}catch(e){}})();
       <a href="benefits.html">Employee Benefits</a>
     </div>
     <div>
-      <h4>More</h4>
+      <h2 class="foot-h">More</h2>
       <a href="insights.html">Insights</a>
       <a href="about.html">About</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="onepager.html">One-page overview</a>
     </div>
     <div>
-      <h4>Get in touch</h4>
+      <h2 class="foot-h">Get in touch</h2>
       <a href="contact.html">Book a Consultation</a>
       <a href="mailto:mtmdselflove@gmail.com">mtmdselflove@gmail.com</a>
       <a href="https://www.linkedin.com/in/campus2corporate" target="_blank" rel="noopener">LinkedIn</a>
@@ -211,7 +214,7 @@ if(s.motion==='reduce')d.setAttribute('data-motion','reduce');}catch(e){}})();
   <div class="wrap foot-bottom">
     <span>&copy; <span id="yr"></span> Srikanth Kalyanasundaram Consulting, Mumbai, India. All rights reserved.</span>
     <span>Mindful Professional 360&deg;&trade;</span>
-    <span class="foot-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="contact.html">Grievances</a></span>
+    <span class="foot-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="terms.html#grievances">Grievances</a></span>
   </div>
 </footer>
 

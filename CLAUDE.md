@@ -132,6 +132,15 @@ pass and a full SEO and AI-search pass. GitHub Pages is off.
 - The AI readiness-check chatbot is a separate private project (backed up to a private GitHub repo on
   21 November). It is not linked from this site until the owner approves it.
 
+**24 November 2026, legal and accessibility pass (PR #14):** privacy notice (FormSubmit keeps submissions 30 days,
+security, deleting your data, adults-only form and college-shared student data), terms (credits for photos, the
+Leadership Spotlight cover and the AI illustrations; cancellation and refunds per written proposal; a named grievance
+officer, which the footer "Grievances" link now opens), contact-form consent text, claims reworded ("two decades in HR",
+"about half" with the 54.8% source, "Recent campus engagements", pilot FAQ), WCAG AA contrast and heading fixes (axe: 0
+violations on 15 pages). `tools/launch.sh` no longer publishes `brag-output/` and `docs/`. Open questions for the owner:
+the brag video (domain srikanthconsulting.in is unregistered), award issuers and years, certificate issuer names, the
+AICTE 12.5 lakh source, photo consent, the music licence, the AI image tool's terms.
+
 ## Pending
 1. **Activate the contact form:** the owner clicks "Activate Form" in the mtmdselflove@gmail.com inbox,
    then send one more test enquiry and check it arrives.
