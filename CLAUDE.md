@@ -145,7 +145,7 @@ AICTE 12.5 lakh source, photo consent, the music licence, the AI image tool's te
 year where he gave one (nine; the old World HR Summit, Chairman's, safety and Laureate Assembly lines were not on his
 list and were dropped); certificate issuers named (Happiitude with the Berkeley Well-Being Institute, California;
 National Institute of Skill Training, New Delhi); his employer's name is no longer used anywhere ("I cannot use
-anywhere my company name"), Aarambh stays. He wants the contact form activated only after the brand is filed (it is
+anywhere my company name"); Aarambh removed too (his second reply: it was built at his employer). He wants the contact form activated only after the brand is filed (it is
 tied to the email address, so the brand does not need a new activation); 2-Step Verification is on for the business
 Gmail; payment terms are no advance or 50% advance, balance on completion, no automatic refund (the site promises none).
 
@@ -157,9 +157,9 @@ Gmail; payment terms are no advance or 50% advance, balance on completion, no au
 3. **Google Business Profile** (the owner's own step, signed in as mtmdselflove@gmail.com): finish
    Google's verification.
 4. **Brand name** once the trade mark application is filed: `tools/launch.sh "<Brand>"`.
-5. **Employment terms.** Employer name removed 24 November at his word; confirm that reading with him. Still
-   open: AICTE 12.5 lakh source, ISTD POSH certificate and Institute of Directors membership current, LinkedIn
-   recommendations still public, college OK for the session photos (an email from each placement officer).
+5. **Employment terms.** Employer name and Aarambh removed 24 November (his replies). Confirmed: POSH (ISTD) certificate
+   held, Institute of Directors Life Member, Certified ESG Professional (IOD), LinkedIn recommendations still public.
+   Still open: AICTE 12.5 lakh source; college OK for the session photos (he will ask each placement officer).
 6. **The repo is public**, so this file and its history can be read by anyone. GitHub Pages is off
    (4 Nov); consider making the repo private.
 7. **Testimonials** for the college and corporate pages: add real, named, dated quotes after the first
