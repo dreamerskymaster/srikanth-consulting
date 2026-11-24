@@ -97,7 +97,8 @@ practice names, titles, structured data, FAQ, one-pager) and fails loudly if any
 - `llms.txt` (summary) and `llms-full.txt` (text of every public page) are for AI assistants. They are
   generated: run `python3 -I tools/build-llms.py .` after editing page text.
 - The `<32 hex>.txt` file at the root is the IndexNow key; `tools/launch.sh` pings IndexNow after deploys.
-- Google Search Console is not set up yet (see Pending).
+- Google Search Console (owner ajithsri3103@gmail.com, verified 5 November 2026 by the meta tag) and Bing
+  Webmaster Tools (imported from Search Console) both have the site and `sitemap.xml`.
 
 ## Contact form
 With JavaScript, `js/main.js` sends it to FormSubmit's AJAX endpoint (`/ajax/mtmdselflove@gmail.com`, no
@@ -116,26 +117,28 @@ FormSubmit and Gmail as the services that handle enquiries.
 - Layout helpers: `.wrap`, `.section-dark`, `.section-paper`, `.split`, `.grid-3`, `.card`, `.aud`,
   `.steps`, `.prose` (legal pages). Reuse these rather than inventing new patterns.
 
-## Current status (4 November 2026)
-`main` holds the launch-ready site (PR #11, merged 4 Nov): the four practices on the home page, his new
-founder bio, the Employee Benefits page, a working contact form (FormSubmit), a compliance pass (no
-placeholder testimonials, sourced statistics, advice-only wording for benefits) and a full SEO and
-AI-search pass. GitHub Pages is off (the github.io copy returns 404).
-**Launched on 4 November 2026**, two days before the planned 6 November, after the merge auto-deployed
-it: a clean copy of `main` (7d1af55) was then deployed over the automatic one and IndexNow was pinged.
-It is under his own name; the brand follows with `tools/launch.sh "<Brand>"` once the trade mark is filed
-(no application number yet on 4 Nov).
-A separate AI practice chatbot (readiness check) is being built in its own private project; it is not
-linked from this site until the owner approves it.
+## Current status (23 November 2026)
+**Live since 4 November 2026** at https://srikanthk.pages.dev, under his own name: the four practices,
+his founder bio, the Employee Benefits page, the contact form with its email fallback (PR #12), a compliance
+pass and a full SEO and AI-search pass. GitHub Pages is off.
+- The site went live two days early because the Pages project is Git-connected (see Deploy). On 12 November
+  a raw push to `main` again exposed `CLAUDE.md`, `README.md` and `tools/`; a later `tools/launch.sh` fixed
+  it (checked 23 November: those paths return 404).
+- Search Console and Bing have the site and its sitemap (see SEO and AI search).
+- Contact form: FormSubmit was down 3 to 10 November. On 21 November a test enquiry triggered the one-time
+  "Activate Form" email in mtmdselflove@gmail.com; until the owner clicks it, visitors see the email fallback.
+- Brand: chosen on 17 November; it goes on the site with `tools/launch.sh "<Brand>"` once the trade mark
+  application is filed (not filed yet). The name stays out of this public repo until then.
+- The AI readiness-check chatbot is a separate private project (backed up to a private GitHub repo on
+  21 November). It is not linked from this site until the owner approves it.
 
 ## Pending
-1. ~~Launch~~ done 4 November 2026. After merging this file's PR, run `tools/launch.sh` once more.
-2. **Activate the contact form** right after launch: submit one test enquiry on the live site, click
-   "Activate Form" in the mtmdselflove@gmail.com inbox, then send a second test.
-3. **Google Search Console:** URL-prefix property https://srikanthk.pages.dev/ added 4 Nov under
-   ajithsri3103@gmail.com. Verification: the meta tag in `index.html` and `googled2da2ffa5502e466.html` at
-   the root (keep both, or Google un-verifies). Then submit `sitemap.xml`, add mtmdselflove@gmail.com as an
-   owner, and import into Bing Webmaster Tools.
+1. **Activate the contact form:** the owner clicks "Activate Form" in the mtmdselflove@gmail.com inbox,
+   then send one more test enquiry and check it arrives.
+2. **Search Console:** add mtmdselflove@gmail.com as an owner (Settings, Users and permissions), if not done.
+   Keep the verification meta tag in `index.html` and `googled2da2ffa5502e466.html`.
+3. **Google Business Profile** (the owner's own step, signed in as mtmdselflove@gmail.com): finish
+   Google's verification.
 4. **Brand name** once the trade mark application is filed: `tools/launch.sh "<Brand>"`.
 5. **Employment terms.** The owner is confirming his employment terms allow this work, and whether to
    keep his current employer's name on the site (once on home, three times on portfolio).
