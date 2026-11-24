@@ -128,6 +128,15 @@ It is under his own name; the brand follows with `tools/launch.sh "<Brand>"` onc
 A separate AI practice chatbot (readiness check) is being built in its own private project; it is not
 linked from this site until the owner approves it.
 
+**24 November 2026, legal and accessibility pass (PR #14):** privacy notice (FormSubmit keeps submissions 30 days,
+security, deleting your data, adults-only form and college-shared student data), terms (credits for photos, the
+Leadership Spotlight cover and the AI illustrations; cancellation and refunds per written proposal; a named grievance
+officer, which the footer "Grievances" link now opens), contact-form consent text, claims reworded ("two decades in HR",
+"about half" with the 54.8% source, "Recent campus engagements", pilot FAQ), WCAG AA contrast and heading fixes (axe: 0
+violations on 15 pages). `tools/launch.sh` no longer publishes `brag-output/` and `docs/`. Open questions for the owner:
+the brag video (domain srikanthconsulting.in is unregistered), award issuers and years, certificate issuer names, the
+AICTE 12.5 lakh source, photo consent, the music licence, the AI image tool's terms.
+
 ## Pending
 1. ~~Launch~~ done 4 November 2026. After merging this file's PR, run `tools/launch.sh` once more.
 2. **Activate the contact form** right after launch: submit one test enquiry on the live site, click
